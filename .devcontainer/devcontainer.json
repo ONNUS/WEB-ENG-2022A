@@ -11,5 +11,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "sh .script/docker/default/start.sh"
+	"postCreateCommand": "bash .script/docker/default/start.sh"
 }
