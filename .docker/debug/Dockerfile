@@ -1,0 +1,55 @@
+FROM php:8.1-apache
+
+# Copy virtual host into container
+COPY ./resources/000-default.conf /etc/apache2/sites-available/000-default.conf
+
+# Enable rewrite mode
+RUN a2enmod rewrite
+
+# Install necessary packages
+RUN apt-get update && \
+    apt-get install \
+    libzip-dev \
+    wget \
+    git \
+    unzip \
+    -y --no-install-recommends
+
+# Install PHP Extensions
+RUN docker-php-ext-install zip pdo_mysql
+
+RUN pecl install -o -f xdebug-3.1.5 \
+    && docker-php-ext-enable xdebug
+#     && rm -rf /tmp/pear
+
+# Copy php.ini
+COPY ./resources/php.ini /usr/local/etc/php/
+
+# Copy composer installable
+COPY ./installs/composer.sh ./installs/
+
+# Cleanup packages and install composer
+RUN apt-get purge -y g++ \
+    && apt-get autoremove -y \
+    && rm -r /var/lib/apt/lists/* \
+    && rm -rf /tmp/* \
+    && sh ./installs/composer.sh \
+    && rm ./installs/composer.sh
+
+# Installs PHP Code Sniffer
+RUN composer require --dev squizlabs/php_codesniffer
+
+# Change the current working directory
+WORKDIR /var/www
+
+# RUN docker run --rm -w $(pwd) -v $(pwd):$(pwd) elnebuloso/php-phpmd
+
+
+# Change the owner of the container document root
+RUN chown -R www-data:www-data /var/www
+
+# Start Apache in foreground
+CMD ["apache2-foreground"]
+# Run PHPCS on the source code
+# CMD ["phpcs", "--standard=PSR2", "./src"]
+# CMD ["phpmd", "./src", "text", "cleancode,codesize,controversial,design,naming,unusedcode"]

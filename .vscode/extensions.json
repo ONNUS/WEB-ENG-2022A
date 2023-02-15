@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "github.codespaces",
+        "xdebug.php-debug",
+        "ecodes.vscode-phpmd"
+    ]
+}

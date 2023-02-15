@@ -1,0 +1,103 @@
+{
+    "onnus": {
+        "current": "2207c",
+        "last": "2207c",
+        "latest": "2207c"
+    },
+    "php": {
+        "onnus": "onnus.php"
+    },
+    "css": {
+        "onnus-list": "onnus-list.css",
+        "onnus-menu-browser": "onnus-menu-browser.css",
+        "onnus-menu": "onnus-menu.css",
+        "onnus-mobile": "onnus-mobile.css",
+        "onnus-tablet": "onnus-tablet.css",
+        "onnus": "onnus.css"
+    },
+    "js": {
+        "onnus.attribute": "onnus.attribute.js",
+        "onnus.debug": "onnus.debug.js",
+        "onnus.element": "onnus.element.js",
+        "onnus.index": "onnus.index.js",
+        "onnus": "onnus.js",
+        "onnus.list": "onnus.list.js",
+        "onnus.menu": "onnus.menu.js",
+        "onnus.style": "onnus.style.js",
+        "onnus.tag": "onnus.tag.js"
+    },
+    "json": {
+        "onnus_index": "onnus_index.json"
+    },
+    "folder": {
+        "onnus": "onnus\/",
+        "root": "\/",
+        "_onnus_": "2207c\/",
+        "content": "content\/",
+        "resources": "__resources__\/",
+        "class": "_class_\/",
+        "framework": "framework\/",
+        "php": "php\/",
+        "archives": "_archives_\/",
+        "deleted": "_deleted_\/",
+        "installs": "_installs_\/",
+        "uploads": "_uploads_\/",
+        "js": "js\/",
+        "css": "css\/",
+        "applications": "__applications__\/",
+        "plugins": "__plugins__\/",
+        "api": "_api_\/",
+        "elements": "elements\/",
+        "images": "images\/",
+        "layouts": "layouts\/",
+        "pages": "pages\/",
+        "menus": "menus\/",
+        "data": "_data_\/",
+        "footer": "_footer_\/",
+        "header": "_header_\/"
+    },
+    "directory": {
+        "onnus": "onnus\/",
+        "content": "onnus\/content\/",
+        "con_resources": "onnus\/content\/__resources__\/",
+        "con_res_onnus": "onnus\/content\/__resources__\/onnus\/",
+        "con_res_onn_class": "onnus\/content\/__resources__\/onnus\/_class_\/",
+        "framework": "onnus\/framework\/2207c\/",
+        "fra_resources": "onnus\/framework\/2207c\/__resources__\/",
+        "fra_res_php": "onnus\/framework\/2207c\/__resources__\/php\/",
+        "onn_archives": "onnus\/_archives_\/",
+        "onn_deleted": "onnus\/_deleted_\/",
+        "onn_installs": "onnus\/_installs_\/",
+        "onn_uploads": "onnus\/_uploads_\/",
+        "fra_res_js": "onnus\/framework\/2207c\/__resources__\/js\/",
+        "fra_res_css": "onnus\/framework\/2207c\/__resources__\/css\/",
+        "fra_applications": "onnus\/framework\/2207c\/__applications__\/",
+        "fra_plugins": "onnus\/framework\/2207c\/__plugins__\/",
+        "fra_api": "onnus\/framework\/2207c\/_api_\/",
+        "fra_elements": "onnus\/framework\/2207c\/elements\/",
+        "fra_images": "onnus\/framework\/2207c\/images\/",
+        "fra_layouts": "onnus\/framework\/2207c\/layouts\/",
+        "fra_pages": "onnus\/framework\/2207c\/pages\/",
+        "fra_menus": "onnus\/framework\/2207c\/menus\/",
+        "con_applications": "onnus\/content\/__applications__\/",
+        "con_plugins": "onnus\/content\/__plugins__\/",
+        "con_api": "onnus\/content\/_api_\/",
+        "con_class": "onnus\/content\/_class_\/",
+        "con_data": "onnus\/content\/_data_\/",
+        "con_footer": "onnus\/content\/_footer_\/",
+        "con_header": "onnus\/content\/_header_\/",
+        "con_elements": "onnus\/content\/elements\/",
+        "con_images": "onnus\/content\/images\/",
+        "con_layouts": "onnus\/content\/layouts\/",
+        "con_pages": "onnus\/content\/pages\/",
+        "con_menus": "onnus\/content\/menus\/"
+    },
+    "path": {
+        "onnus_index_json": "onnus\/content\/__resources__\/onnus\/_class_\/onnus_index.json",
+        "onnus_php": "onnus\/framework\/2207c\/__resources__\/php\/onnus.php"
+    },
+    "class": {
+        "onnus\/framework\/2207c\/__resources__\/php\/": null,
+        "onnus\/content\/_class_\/": null
+    }
+}

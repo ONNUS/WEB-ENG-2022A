@@ -1,0 +1,264 @@
+{
+    "type": "container",
+    "tag": "browser-options",
+    "attributes": "data-onnus{color[i#6]}class{onnus-menu onnus-menu-closed onnus-border-right-solid-1px --onnus-tablet-position-absolute}",
+    "select": "browser-options[]menu-dashboards[]",
+    "content": [
+        {
+            "type": "toggle",
+            "icon": "D",
+            "label": "Dashboards",
+            "alt": "ALT",
+            "menu": "content-options[]browser-options[]",
+            "tag": "browser-options[]menu-dashboards[]",
+            "api": "dashboards",
+            "onclick": "onnus_browser_content_load('dashboards');",
+            "content": []
+        },
+        {
+            "type": "toggle",
+            "icon": "C",
+            "label": "Components",
+            "alt": "ALT",
+            "menu": "content-options[]browser-options[]",
+            "tag": "browser-options[]menu-components[]",
+            "api": "components",
+            "onclick": "onnus_browser_content_load('components');",
+            "content": [
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "APIs",
+                    "alt": "ALT",
+                    "api": "components\/apis",
+                    "onclick": "onnus_browser_content_load('components\/apis');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Pages",
+                    "alt": "ALT",
+                    "api": "components\/pages",
+                    "onclick": "onnus_browser_content_load('components\/pages');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Layouts",
+                    "alt": "ALT",
+                    "api": "components\/layouts",
+                    "onclick": "onnus_browser_content_load('components\/layouts');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Menus",
+                    "alt": "ALT",
+                    "api": "components\/menus",
+                    "onclick": "onnus_browser_content_load('components\/menus');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Headers",
+                    "alt": "ALT",
+                    "api": "components\/headers",
+                    "onclick": "onnus_browser_content_load('components\/headers');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Footers",
+                    "alt": "ALT",
+                    "api": "components\/footers",
+                    "onclick": "onnus_browser_content_load('components\/footers');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Elements",
+                    "alt": "ALT",
+                    "api": "components\/elements",
+                    "onclick": "onnus_browser_content_load('components\/elements');"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "icon": "R",
+            "label": "Resources",
+            "alt": "ALT",
+            "menu": "content-options[]browser-options[]",
+            "tag": "browser-options[]menu-resources[]",
+            "api": "resources",
+            "onclick": "onnus_browser_content_load('resources');",
+            "content": [
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Applications",
+                    "alt": "ALT",
+                    "api": "resources\/applications",
+                    "onclick": "onnus_browser_content_load('resources\/applications');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Plugins",
+                    "alt": "ALT",
+                    "api": "resources\/plugins",
+                    "onclick": "onnus_browser_content_load('resources\/plugins');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Libraries",
+                    "alt": "ALT",
+                    "api": "resources\/libraries",
+                    "onclick": "onnus_browser_content_load('resources\/libraries');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Classes",
+                    "alt": "ALT",
+                    "api": "resources\/classes",
+                    "onclick": "onnus_browser_content_load('resources\/classes');"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "icon": "A",
+            "label": "Accounts",
+            "alt": "ALT",
+            "menu": "content-options[]browser-options[]",
+            "tag": "browser-options[]menu-accounts[]",
+            "api": "accounts",
+            "onclick": "onnus_browser_content_load('accounts');",
+            "content": [
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Users",
+                    "alt": "ALT",
+                    "api": "accounts\/users",
+                    "onclick": "onnus_browser_content_load('accounts\/users');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Permissions",
+                    "alt": "ALT",
+                    "api": "accounts\/permissions",
+                    "onclick": "onnus_browser_content_load('accounts\/permissions');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Notifications",
+                    "alt": "ALT",
+                    "api": "accounts\/notifications",
+                    "onclick": "onnus_browser_content_load('accounts\/notifications');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Logs",
+                    "alt": "ALT",
+                    "api": "accounts\/logs",
+                    "onclick": "onnus_browser_content_load('accounts\/logs');"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "icon": "S",
+            "label": "Systems",
+            "alt": "ALT",
+            "menu": "content-options[]browser-options[]",
+            "tag": "browser-options[]menu-systems[]",
+            "api": "systems",
+            "onclick": "onnus_browser_content_load('systems');",
+            "content": [
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Onnus",
+                    "alt": "ALT",
+                    "api": "systems\/onnus",
+                    "onclick": "onnus_browser_content_load('systems\/onnus');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Data",
+                    "alt": "ALT",
+                    "api": "systems\/data",
+                    "onclick": "onnus_browser_content_load('systems\/data');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Debug",
+                    "alt": "ALT",
+                    "api": "systems\/debug",
+                    "onclick": "onnus_browser_content_load('systems\/debug');"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u20aa",
+                    "label": "Logs",
+                    "alt": "ALT",
+                    "api": "systems\/logs",
+                    "onclick": "onnus_browser_content_load('systems\/logs');"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        },
+        {
+            "type": "browser",
+            "icon": "B",
+            "label": "Browser",
+            "alt": "ALT",
+            "api": "browser",
+            "onclick": "onnus_browser_content_load('browser');",
+            "menu": "content-options[]browser-options[]",
+            "tag": "browser-options[]menu-browser[]",
+            "content": [
+                {
+                    "type": "folder",
+                    "icon": "\u25ba",
+                    "label": "Server",
+                    "alt": "Onnus Browser | \/\/server",
+                    "api": "",
+                    "menu_id": 0,
+                    "onclick": "onnus_browser_folder('..', '0');"
+                },
+                {
+                    "type": "folder",
+                    "icon": "\u25ba",
+                    "label": "Public",
+                    "alt": "Onnus Browser | \/\/root",
+                    "api": "",
+                    "menu_id": 1,
+                    "onclick": "onnus_browser_folder('.', '1');"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        }
+    ]
+}

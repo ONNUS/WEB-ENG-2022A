@@ -1,0 +1,253 @@
+/**
+ * Copyright (c) 2020 | Onnus Developer Foundation 503c
+ * Copyright (c) 2020 | Onnus Developer Core LLC
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author Jasen Crockett <jasenc@onnus.org>
+ *
+ * Created      : 2020-08-19 01:23:45 :
+ * Modified     : 2022-04-30 05:06:40 :
+ */
+
+
+
+    .onnus-menu .onnus-menu-browser {
+        flex: 1;
+
+        /* min-height: auto; */
+        min-height: 60px;
+        /* overflow: none; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-browser > menu-bar {
+        flex: 0;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-browser > menu-bar > bar-icon {
+        flex: 0;
+
+        min-height: 35px;
+        min-width: 35px;
+        max-width: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-browser > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 35px;
+        padding-left: 5px;
+        padding-right: 50px;
+
+        transition: min-width ease, padding 1s ease;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-browser > menu-content {
+        flex: 1;
+
+        /* padding-top: 5px;
+        padding-bottom: 5px; */
+        min-height: fit-content;
+
+        overflow: auto;
+
+        /* min-height: 60px; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-button {
+        flex: 0;
+
+        min-height: 25px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-button > menu-bar {
+        flex: 0;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-button > menu-bar > bar-icon {
+        flex: 0;
+
+        min-height: 25px;
+        min-width: 35px;
+        max-width: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-button > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 25px;
+        padding-left: 5px;
+        padding-right: 25px;
+
+        transition: min-width ease, padding 1s ease;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-spacer {
+        flex: 0;
+
+        min-height: 10px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-spacer > menu-bar {
+        flex: 0;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-spacer > menu-bar > bar-icon {
+        flex: 0;
+
+        min-height: 10px;
+        min-width: 35px;
+        max-width: 35px;
+
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-spacer > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 10px;
+        /* padding-left: 5px; */
+        /* padding-right: 25px; */
+
+        transition: min-width ease, padding 1s ease;
+
+        display: flex;
+        /* justify-content: left; */
+        /* align-items: center; */
+    }
+
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-folder {
+        flex: 0;
+
+        min-height: fit-content;
+        /* max-height: max-content; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-folder folder-bar {
+        flex: 0;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-folder folder-bar > bar-icon {
+        flex: 0;
+
+        min-height: 23px;
+        min-width: 20px;
+        max-width: 20px;
+        margin-left: 5px;
+
+        font-size: small;
+        /* border-bottom: 1px solid; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-folder folder-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 23px;
+        max-height: 23px;
+        padding-left: 2px;
+        padding-right: 50px;
+
+        transition: min-width ease, padding 1s ease;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-browser .onnus-menu-folder folder-content {
+        flex: 0;
+
+        margin-left: 15px;
+        min-height: auto;
+
+        border-left: 1px solid;
+        /* border-bottom: 1px solid; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .onnus-menu-closed .onnus-menu-browser > menu-bar > bar-label,
+    .onnus-menu-closed .onnus-menu-browser > menu-content,
+    .onnus-menu-closed .onnus-menu-browser > folder-content
+    {
+        display: none;
+    }
+
+    .onnus-menu .onnus-menu-browser > .onnus-menu-collapse 
+    {
+        display: none;
+    }

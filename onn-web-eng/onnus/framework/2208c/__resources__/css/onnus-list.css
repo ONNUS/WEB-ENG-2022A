@@ -1,0 +1,283 @@
+/**
+ * Copyright (c) 2020 | Onnus Developer Foundation 503c
+ * Copyright (c) 2020 | Onnus Developer Core LLC
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author Jasen Crockett <jasenc@onnus.org>
+ *
+ * Created      : 2020-08-19 01:23:45 :
+ * Modified     : 2022-04-30 05:06:40 :
+ */
+
+
+    .onnus-list {
+        display: block;
+    }
+
+
+/* onnus-list-style-grid */
+
+    .onnus-list-style-grid {
+        display: flex;
+
+        flex: 1;
+        flex-direction: column;
+
+        overflow-y: auto;
+
+        /* transition: all 0.5s ease; */
+    }
+
+    .onnus-list-style-grid > list-content {
+        display: flex;
+
+        /* margin-bottom: 45px; */
+
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .onnus-list-style-grid > list-content > content-header {
+        display: flex;
+
+        padding: 10px;
+
+        flex: 0;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        font-size: x-large;
+        font-weight: bold;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .onnus-list-style-grid > list-content > content-list {
+        display: flex;
+
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .onnus-list-style-grid > list-content > content-list > list-item:first-child {
+        display: none;
+    }
+
+    .onnus-list-style-grid > list-content > content-list > list-item {
+        display: flex;
+
+        margin: 10px;
+
+        max-height: 175px;
+        max-width: 129px;
+
+        flex: 1;
+        /* flex-direction: column-reverse; */
+        flex-direction: column;
+    }
+
+    .onnus-list-style-grid > list-content > content-list > list-item > item-label {
+        display: flex;
+
+        min-height: 45px;
+
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    .onnus-list-style-grid > list-content > content-list > list-item > item-data {
+        display: flex;
+
+        /* border: 2px solid; */
+        border: 2px solid; /*temp code*/
+
+        max-height: 125px;
+        max-width: 125px;
+        min-height: 125px;
+        min-width: 125px;
+
+        flex: 1;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    .onnus-list-style-grid > list-content > content-list > list-item > item-data > data-value {
+        display: flex;
+    }
+
+    .onnus-list-style-grid > list-content > content-list > list-item > item-data > data-option {
+        display: none;
+    }
+
+    @media only screen and (max-width: 540px) {
+
+    }
+
+
+/* onnus-list-style-detail */
+
+    .onnus-list-style-detail {
+        display: flex;
+
+        flex: 1;
+        flex-direction: column;
+
+        overflow-y: auto;
+
+        /* transition: all 0.5s ease; */
+    }
+
+    .onnus-list-style-detail > list-content {
+        display: flex;
+
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .onnus-list-style-detail > list-content > content-header {
+        display: flex;
+
+        padding: 10px;
+
+        flex: 0;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        font-size: x-large;
+        font-weight: bold;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .onnus-list-style-detail > list-content > content-list {
+        display: flex;
+
+        /* max-width: 80%; */
+        
+        margin-bottom: 15px;
+
+        flex: 0;
+        flex-direction: column;
+
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .onnus-list-style-detail > list-content > content-list > list-item {
+        display: flex;
+
+        /* margin: 10px; */
+
+        /* max-height: 125px; */
+        /* max-width: 125px; */
+
+        /* padding: 5px; */
+
+        /* border-top: 1px solid white; */
+        border-bottom: 1px solid;
+
+        min-width: 80%;
+
+        flex: 1;
+        flex-direction: row-reverse;
+        /* flex-direction: column; */
+
+        justify-content: center;
+        /* align-items: center; */
+
+        cursor: pointer;
+    }
+
+    .onnus-list-style-detail > list-content > content-list > list-item > item-label {
+        display: flex;
+
+        padding: 5px;
+
+        flex: 1;
+
+        font-weight: bold;
+
+        /* min-height: 45px; */
+
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .onnus-list-style-detail > list-content > content-list > list-item > item-data {
+        display: flex;
+
+        /* border: 2px solid; */
+        /* border: 2px solid white; temp code */
+
+        /* max-height: 125px; */
+        /* max-width: 125px; */
+        /* min-height: 125px; */
+        /* min-width: 125px; */
+
+        flex: 2;
+        /* flex-direction: column; */
+
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .onnus-list-style-detail > list-content > content-list > list-item > item-data > data-value {
+        display: flex;
+
+        padding: 5px;
+
+        flex: 1;
+    }
+
+    .onnus-list-style-detail > list-content > content-list > list-item > item-data > data-option {
+        display: flex;
+
+        padding: 5px;
+
+        flex: 0.5;
+
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 540px) {
+
+        .onnus-list-style-detail > list-content > content-list > list-item:first-child {
+            display: none;
+        }
+
+        .onnus-list-style-detail > list-content > content-list > list-item {
+            margin-bottom: 15px;
+            
+            flex-direction: column-reverse;
+        }
+        
+        .onnus-list-style-detail > list-content > content-list > list-item > item-label {
+            justify-content: center;
+        }
+
+        .onnus-list-style-detail > list-content > content-list > list-item > item-data {
+            flex-direction: column;
+        }
+
+        .onnus-list-style-detail > list-content > content-list > list-item > item-data > data-value {
+            justify-content: center;
+        }
+
+    }

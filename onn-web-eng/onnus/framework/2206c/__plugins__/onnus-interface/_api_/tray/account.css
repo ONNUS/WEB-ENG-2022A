@@ -1,0 +1,88 @@
+.onnus-interface-account-profile > account-options > options-profile,
+.onnus-interface-account-interface > account-options > options-interface,
+.onnus-interface-account-settings > account-options > options-settings,
+.onnus-interface-account-sessions > account-options > options-sessions,
+.onnus-interface-account-logout > account-options > options-logout
+{
+    margin: 3px;
+    border: 2px solid;
+}
+
+.onnus-interface-account-interface > account-avatar,
+.onnus-interface-account-settings > account-avatar,
+.onnus-interface-account-sessions > account-avatar
+{
+    flex: 1;
+}
+
+.onnus-interface-account-interface > account-options,
+.onnus-interface-account-settings > account-options,
+.onnus-interface-account-sessions > account-options
+{
+    flex: 1;
+}
+
+.onnus-interface-account-interface > account-content,
+.onnus-interface-account-settings > account-content,
+.onnus-interface-account-sessions > account-content
+{
+    flex: 2;
+    flex-direction: row;
+}
+
+.onnus-interface-account-interface > account-avatar > object,
+.onnus-interface-account-settings > account-avatar > object,
+.onnus-interface-account-sessions > account-avatar > object
+{
+    width: 6rem;
+    height: 6rem;
+}
+
+
+
+@media only screen and (max-width: 540px) {
+
+    .onnus-interface-account-interface > account-options,
+    .onnus-interface-account-settings > account-options,
+    .onnus-interface-account-sessions > account-options
+    {
+        max-height: 10rem;
+        max-width: 100%;
+    }
+    
+    .onnus-interface-account-interface > account-avatar,
+    .onnus-interface-account-settings > account-avatar,
+    .onnus-interface-account-sessions > account-avatar
+    {
+        max-height: 5rem;
+        max-width: 100%;
+    }
+
+    .onnus-interface-account-interface > account-avatar > object,
+    .onnus-interface-account-settings > account-avatar > object,
+    .onnus-interface-account-sessions > account-avatar > object
+    {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .onnus-interface-account-interface > account-content,
+    .onnus-interface-account-settings > account-content,
+    .onnus-interface-account-sessions > account-content
+    {
+        flex-direction: column;
+    }
+
+    .onnus-interface-account-interface > account-content > content-interface {
+        flex: 0;
+        padding-top: 1rem;
+
+        min-width: 100%;
+        min-height: 20%;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-lms",
+    "name": "onnus-lms",
+    "icon": {
+        "file": null,
+        "module": null,
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus LMS",
+    "date": "2022-09-13"
+}

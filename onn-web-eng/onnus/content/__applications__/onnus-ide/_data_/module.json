@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-ide",
+    "name": "onnus-ide",
+    "icon": {
+        "file": null,
+        "module": null,
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus IDE",
+    "date": "2022-11-14"
+}

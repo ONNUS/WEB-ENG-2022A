@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-exchange",
+    "name": "onnus-exchange",
+    "icon": {
+        "file": "onnus-exchange.svg",
+        "module": "onnus-exchange",
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus Exchange",
+    "date": "2022-12-14"
+}

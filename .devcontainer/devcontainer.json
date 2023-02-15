@@ -1,0 +1,15 @@
+{
+	"name": "| Development Container |",
+	"forwardPorts": [
+		80
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode-remote.remote-containers",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"postCreateCommand": "sh .script/docker/default/start.sh"
+}

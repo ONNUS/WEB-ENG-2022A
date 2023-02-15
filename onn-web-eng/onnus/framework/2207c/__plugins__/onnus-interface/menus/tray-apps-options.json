@@ -1,0 +1,110 @@
+{
+    "type": "container",
+    "tag": "options-menu",
+    "attributes": "data-onnus{color[i#6]}class{onnus-menu onnus-menu-reverse onnus-menu-closed onnus-border-left-solid-1px onnus-tablet-position-absolute}",
+    "select": "options-menu[]menu-label[]",
+    "content": [
+        {
+            "type": "filler"
+        },
+        {
+            "type": "toggle",
+            "icon": {
+                "file": "tray-apps\/icon-recent.svg",
+                "module": "onnus-interface",
+                "attributes": "class{}data-onnus{color-fill[i#5]}",
+                "method": "onn_int_app_sort_recent"
+            },
+            "label": "Recent",
+            "alt": "Recent Applications",
+            "menu": "apps-options[]options-menu[]",
+            "tag": "options-menu[]menu-recent[]",
+            "onclick": "onn_int_app_sort('recent');",
+            "content": []
+        },
+        {
+            "type": "toggle",
+            "icon": {
+                "file": "tray-apps\/icon-label.svg",
+                "module": "onnus-interface",
+                "attributes": "class{}data-onnus{color-fill[i#5]}",
+                "method": "onn_int_app_sort_label"
+            },
+            "label": "Label",
+            "alt": "Label Applications",
+            "menu": "apps-options[]options-menu[]",
+            "tag": "options-menu[]menu-label[]",
+            "onclick": "onn_int_app_sort('label');",
+            "content": [
+                {
+                    "type": "button",
+                    "icon": "\u25b2",
+                    "label": "A-Z",
+                    "alt": "ALT",
+                    "onclick": "onn_int_app_list_reverse(false);"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u25bc",
+                    "label": "Z-A",
+                    "alt": "ALT",
+                    "onclick": "onn_int_app_list_reverse(true);"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "icon": {
+                "file": "tray-apps\/icon-date.svg",
+                "module": "onnus-interface",
+                "attributes": "class{}data-onnus{color-fill[i#5]}",
+                "method": "onn_int_app_sort_date"
+            },
+            "label": "Date",
+            "alt": "Date Applications",
+            "menu": "apps-options[]options-menu[]",
+            "tag": "options-menu[]menu-date[]",
+            "onclick": "onn_int_app_sort('date');",
+            "content": [
+                {
+                    "type": "button",
+                    "icon": "\u25b2",
+                    "label": "9-0",
+                    "alt": "ALT",
+                    "onclick": "onn_int_app_list_reverse(false);"
+                },
+                {
+                    "type": "button",
+                    "icon": "\u25bc",
+                    "label": "0-9",
+                    "alt": "ALT",
+                    "onclick": "onn_int_app_list_reverse(true);"
+                },
+                {
+                    "type": "spacer"
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "icon": {
+                "file": "tray-apps\/icon-updates.svg",
+                "module": "onnus-interface",
+                "attributes": "class{}data-onnus{color-fill[i#5]}",
+                "method": "onn_int_app_sort_updates"
+            },
+            "label": "Updates",
+            "alt": "Updates Applications",
+            "menu": "apps-options[]options-menu[]",
+            "tag": "options-menu[]menu-updates[]",
+            "onclick": "onn_int_app_sort('updates');",
+            "content": []
+        },
+        {
+            "type": "filler"
+        }
+    ]
+}

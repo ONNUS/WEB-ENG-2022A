@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-browser",
+    "name": "onnus-browser",
+    "icon": {
+        "file": "onnus-browser.svg",
+        "module": "onnus-browser",
+        "alt": "onnus-browser",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus Browser",
+    "date": "2022-12-10"
+}

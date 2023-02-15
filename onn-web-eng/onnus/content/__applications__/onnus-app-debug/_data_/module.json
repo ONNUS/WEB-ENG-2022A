@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-debug",
+    "name": "onnus-debug",
+    "icon": {
+        "file": null,
+        "module": null,
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus Debug",
+    "date": "2022-06-10"
+}

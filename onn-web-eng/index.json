@@ -1,0 +1,33 @@
+{
+    "css": {
+        "onnus-list": "onnus-list.css",
+        "onnus-menu-browser": "onnus-menu-browser.css",
+        "onnus-menu": "onnus-menu.css",
+        "onnus-mobile": "onnus-mobile.css",
+        "onnus-tablet": "onnus-tablet.css",
+        "onnus": "onnus.css"
+    },
+    "js": {
+        "onnus.attribute": "onnus.attribute.js",
+        "onnus.debug": "onnus.debug.js",
+        "onnus.element": "onnus.element.js",
+        "onnus.index": "onnus.index.js",
+        "onnus": "onnus.js",
+        "onnus.list": "onnus.list.js",
+        "onnus.menu": "onnus.menu.js",
+        "onnus.style": "onnus.style.js",
+        "onnus.tag": "onnus.tag.js"
+    },
+    "folder": {
+        "root": "\/",
+        "resources": "__resources__\/",
+        "js": "js\/",
+        "css": "css\/"
+    },
+    "directory": {
+        "framework": "onnus\/framework\/2207c\/",
+        "fra_resources": "onnus\/framework\/2207c\/__resources__\/",
+        "fra_res_js": "onnus\/framework\/2207c\/__resources__\/js\/",
+        "fra_res_css": "onnus\/framework\/2207c\/__resources__\/css\/"
+    }
+}

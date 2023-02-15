@@ -1,0 +1,23 @@
+{
+    "title": "",
+    "description": "",
+    "parent": true,
+    "redirect": {
+        "_": false,
+        "url": ""
+    },
+    "refresh": {
+        "_": false,
+        "seconds": 2
+    },
+    "forward": {
+        "_": false,
+        "path": ""
+    },
+    "module": {
+        "_": false,
+        "type": "",
+        "name": "",
+        "include": ""
+    }
+}

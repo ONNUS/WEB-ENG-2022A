@@ -1,0 +1,26 @@
+# Use an official PHP image as a base
+FROM php:7.4-fpm-alpine
+
+# Install dependencies
+RUN apk add --no-cache \
+    curl \
+    libcurl \
+    git \
+    unzip \
+    build-base \
+    autoconf \
+    g++
+
+# Install Composer
+COPY installs/composer.sh /tmp/composer.sh
+RUN chmod 755 /tmp/composer.sh
+RUN /tmp/composer.sh
+RUN mv composer.phar /usr/local/bin/composer
+
+# Clear the cache
+RUN apk del build-base \
+    autoconf \
+    g++
+
+# Set the working directory
+WORKDIR /app

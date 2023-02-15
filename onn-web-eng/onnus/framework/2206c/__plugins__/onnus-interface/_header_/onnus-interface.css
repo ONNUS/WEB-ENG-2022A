@@ -1,0 +1,209 @@
+/**
+ * Copyright (c) 2020 | Onnus Developer Foundation 503c
+ * Copyright (c) 2020 | Onnus Developer Core LLC
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author Jasen Crockett <jasenc@onnus.org>
+ *
+ * Created      : 2020-08-19 01:23:45 :
+ * Modified     : 2022-04-30 05:06:40 :
+ */
+
+    :root {
+
+        --onnus-interface-nav-height: 45px;
+
+    }
+
+ /* html > body > body-content */
+
+    html > body > body-content {
+        margin-top: var(--onnus-interface-nav-height, 45px);
+    }
+
+
+/* onnus-interface */
+
+    .onnus-interface * {
+        transition: background-color 0.5s ease;
+    }
+
+
+/* onnus-interface > interface-bar */
+
+    .onnus-interface > interface-bar {
+        min-height: var(--onnus-interface-nav-height, 45px);
+        max-height: var(--onnus-interface-nav-height, 45px);
+    }
+
+    .onnus-interface > interface-bar > bar-close {
+        display: none;
+    }
+
+    .onnus-interface > interface-content {
+        display: none;
+    }
+
+    .onnus-interface-tray-open {
+        transform: rotateX(180deg);
+    }
+
+
+/* Interface Application */
+
+    .onnus-interface-application {
+        position: absolute;
+        min-width: 100%; 
+        min-height: 100%;
+        max-height: 100%;
+
+        overflow: none;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-interface-application > interface-bar {
+        display: flex !important;
+    }
+
+    .onnus-interface-application > interface-bar > bar-toggle {
+        display: none !important;
+    }
+
+    .onnus-interface-application > interface-bar > bar-close {
+        display: flex !important;
+    }
+
+    .onnus-interface-application > interface-content {
+        display: flex !important;
+    }
+
+    
+
+    /* .onnus-interface-application > interface-tray-nav {
+        display: flex !important;
+    } */
+
+    .onnus-interface-application > interface-tray {
+        display: none !important;
+    }
+
+    .onnus-interface-application > interface-nav {
+        display: flex !important;
+    }
+
+    @media only screen and (max-width: 540px) {
+
+        /* .onnus-interface-application {
+            position: absolute;
+            min-width: 100%; 
+            min-height: 100vh !important;
+            max-height: 100%;
+    
+            overflow: none;
+    
+            display: flex; 
+            flex-direction: column;
+        } */
+
+    }
+
+
+/* Interface Tray */
+
+    .onnus-interface-tray {
+        position: absolute;
+        min-width: 100%; 
+        min-height: 0vh;
+        max-height: 100%;
+
+        overflow: none;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-interface-tray > interface-bar {
+        display: flex !important;
+    }
+
+    .onnus-interface-application.onnus-interface-tray > interface-tray-nav {
+        display: flex !important;
+    }
+
+    .onnus-interface-tray > interface-tray {
+        display: flex !important;
+    }
+
+    .onnus-interface-tray > interface-nav {
+        display: flex !important;
+    }
+
+    @media only screen and (max-width: 844px) {
+
+        .onnus-interface-application.onnus-interface-tray {
+            min-height: 100% !important;
+        }
+
+        .onnus-interface-application.onnus-interface-tray > interface-tray-nav {
+            display: none !important;
+        }
+
+        .onnus-interface-application.onnus-interface-tray > interface-content {
+            display: none !important;
+        }
+
+        .onnus-interface-application.onnus-interface-tray > interface-tray {
+            flex: 1;
+            min-height: 100%;
+            max-height: 100%;
+        }
+
+        .onnus-interface-application.onnus-interface-tray > interface-bar > bar-toggle {
+            display: flex !important;
+        }
+    
+        .onnus-interface-application.onnus-interface-tray > interface-bar > bar-close {
+            display: none !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 540px) {
+
+        .onnus-interface-tray {
+            position: absolute;
+            min-width: 100%; 
+            min-height: 100vh !important;
+            max-height: 100%;
+    
+            overflow: none;
+    
+            display: flex; 
+            flex-direction: column;
+        }
+
+    }
+
+
+/* Interface Nav */
+
+    .onnus-interface > interface-tray-nav {
+        min-height: var(--interface-nav-height, 45px);
+        max-height: var(--interface-nav-height, 45px);
+    }
+
+    .onnus-interface > interface-nav {
+        min-height: var(--interface-nav-height, 45px);
+        max-height: var(--interface-nav-height, 45px);
+    }
+
+    .onnus-interface-icon-selected > object {
+        margin: 0px !important;
+
+        border: 2px solid;
+        border-radius: 8px;
+    }

@@ -1,0 +1,9 @@
+{
+    "default": "home",
+    "charset": "utf-8",
+    "viewport": "width=device-width, initial-scale=1.0",
+    "title": "Onnus WEB Engine",
+    "description": "Onnus WEB Engine | Page descruption here.",
+    "header": [],
+    "footer": []
+}

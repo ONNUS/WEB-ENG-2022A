@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-messenger",
+    "name": "onnus-messenger",
+    "icon": {
+        "file": "onnus-messenger.svg",
+        "module": "onnus-messenger",
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus Messenger",
+    "date": "2022-12-05"
+}

@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-crm",
+    "name": "onnus-crm",
+    "icon": {
+        "file": null,
+        "module": null,
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus CRM",
+    "date": "2022-07-13"
+}

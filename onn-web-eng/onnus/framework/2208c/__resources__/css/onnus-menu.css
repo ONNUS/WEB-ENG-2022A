@@ -1,0 +1,289 @@
+/**
+ * Copyright (c) 2020 | Onnus Developer Foundation 503c
+ * Copyright (c) 2020 | Onnus Developer Core LLC
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author Jasen Crockett <jasenc@onnus.org>
+ *
+ * Created      : 2020-08-19 01:23:45 :
+ * Modified     : 2022-04-30 05:06:40 :
+ */
+
+
+
+    .onnus-menu {
+        flex: 0;
+
+        -webkit-user-select: none;
+        user-select: none;
+
+        min-width: min-content;
+        min-height: 100%;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-toggle {
+        flex: 0;
+
+        /* min-height: auto; */
+        /* max-height: 30px; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-toggle > menu-bar {
+        flex: 0;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-toggle > menu-bar > bar-icon {
+        flex: 0;
+
+        min-height: 35px;
+        min-width: 35px;
+        max-width: 35px;
+
+        margin: 1px 0px 1px 0px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-toggle > menu-bar > bar-icon > img {
+        width: 1.60rem;
+        height: auto;
+    }
+
+    .onnus-menu .onnus-menu-toggle > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 35px;
+        padding-left: 5px;
+        padding-right: 50px;
+
+        transition: min-width ease, padding 1s ease;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-toggle > menu-content {
+        flex: 0;
+
+        /* padding-top: 5px;
+        padding-bottom: 5px; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* @media only screen and (max-width: 844px) {} */
+
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-button {
+        flex: 0;
+
+        min-height: 25px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-button > menu-bar {
+        flex: 0;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-button > menu-bar > bar-icon {
+        flex: 0;
+
+        min-height: 30px;
+        min-width: 35px;
+        max-width: 35px;
+
+        margin: 1px 0px 1px 0px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-button > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 25px;
+        padding-left: 5px;
+        padding-right: 25px;
+
+        transition: min-width ease, padding 1s ease;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-spacer {
+        flex: 0;
+
+        min-height: 10px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-spacer > menu-bar {
+        flex: 0;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-spacer > menu-bar > bar-icon {
+        flex: 0;
+
+        min-height: 10px;
+        min-width: 35px;
+        max-width: 35px;
+
+        margin: 1px 0px 1px 0px;
+
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .onnus-menu .onnus-menu-toggle .onnus-menu-spacer > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        min-height: 10px;
+        /* padding-left: 5px; */
+        /* padding-right: 25px; */
+
+        transition: min-width ease, padding 1s ease;
+
+        display: flex;
+        /* justify-content: left; */
+        /* align-items: center; */
+    }
+
+
+
+
+    .onnus-menu .onnus-menu-filler {
+        flex: 1;
+
+        /* min-height: 25px; */
+        min-height: 100%;
+        /* max-height: 250px; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onnus-menu .onnus-menu-filler > menu-bar {
+        flex: 1;
+
+        /* min-height: 100%; */
+        /* max-height: 100%; */
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onnus-menu .onnus-menu-filler > menu-bar > bar-icon {
+        flex: 0;
+
+        /* min-height: 25px; */
+        min-width: 35px;
+        max-width: 35px;
+
+        margin: 1px 0px 1px 0px;
+
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .onnus-menu .onnus-menu-filler > menu-bar > bar-label {
+        flex: 1;
+
+        min-width: 0;
+        /* min-height: 100%; */
+        /* min-height: 25px; */
+        /* padding-left: 5px; */
+        /* padding-right: 25px; */
+
+        transition: min-width ease, padding 1s ease;
+
+        display: flex;
+        /* justify-content: left; */
+        /* align-items: center; */
+    }
+
+
+    .onnus-menu.onnus-menu-reverse {
+        right: 0px;
+    }
+
+    .onnus-menu.onnus-menu-reverse menu-bar {
+        flex-direction: row-reverse !important;
+    }
+
+
+    /* .onnus-menu-closed .onnus-menu-toggle > menu-content, */
+    .onnus-menu-closed .onnus-menu-toggle > menu-bar > bar-label,
+    .onnus-menu-closed .onnus-menu-filler > menu-bar > bar-label
+    {
+        display: none;
+    }
+
+    .onnus-menu .onnus-menu-toggle > .onnus-menu-collapse {
+        display: none;
+    }
+
+
+    .onnus-menu .onnus-toggle-selected > bar-icon {
+        /* display: flex !important; */
+        max-height: 35px;
+
+        /* border-top: 1px solid; */
+        /* border-bottom: 1px solid; */
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    /* .onnus-menu .onnus-toggle-selected > bar-label { */
+        /* border-top: 1px solid; */
+        /* border-bottom: 1px solid; */
+    /* } */
+
+    .onnus-menu-closed bar-label {
+        display: none !important;
+    }

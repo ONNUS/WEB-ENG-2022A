@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "folder": "onnus-cms",
+    "name": "onnus-cms",
+    "icon": {
+        "file": null,
+        "module": null,
+        "alt": "ALT",
+        "attributes": "class[]data-onnus[]"
+    },
+    "label": "Onnus CMS",
+    "date": "2022-08-13"
+}

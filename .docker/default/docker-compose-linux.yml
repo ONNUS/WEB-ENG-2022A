@@ -1,0 +1,16 @@
+---
+version: '3.8'
+
+services:
+  php-apa-con:
+    container_name: php-apa-con
+    build:
+      context: .
+      dockerfile: $PWD/.docker/default/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - type: bind
+        source: $PWD/onn-web-eng
+        target: /var/www/html
+    working_dir: /var/www/html

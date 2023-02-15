@@ -1,0 +1,1230 @@
+/**
+ * Copyright (c) 2020 | Onnus Developer Foundation 503c
+ * Copyright (c) 2020 | Onnus Developer Core LLC
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author Jasen Crockett <jasenc@onnus.org>
+ *
+ * Created      : 2020-08-19 01:23:45 :
+ * Modified     : 2022-04-30 05:06:40 :
+ */
+
+/*
+
+    | A B C D E F G H I J K L M N O P Q R S T U V W X Y Z |
+
+    Onnus CSS Index
+        :root
+        ::scrollbar
+
+        html
+
+        .onnus-
+        .onnus-border-
+        .onnus-
+        .onnus-cursor-
+        .onnus-flex-
+        .onnus-font-
+        .onnus-grid-
+        .onnus-height-
+        .onnus-margin-
+        .onnus-max-height
+        .onnus-max-width
+        .onnus-min-height
+        .onnus-min-width
+        .onnus-padding-
+        .onnus-select-
+        .onnus-text-
+        .onnus-transform-
+        .onnus-width
+
+        MASTER COMMANDS
+        .onnus-display-
+
+ */
+
+/* :root */
+
+    :root {
+
+        --onnus-scrollbar-width: 0.5rem;
+        --onnus-scrollbar-hight: 0.5rem;
+        --onnus-scrollbar-thumb-color: hsla(0, 0%, 50%, 0.25);
+
+        --onnus-font-family: arial;
+        --onnus-font-size: medium;
+
+        --onnus-backgroup-color: white;
+        --onnus-font-color: black;
+
+    }
+
+
+/* ::-webkit-scrollbar */
+
+    ::-webkit-scrollbar {
+        width: var(--onnus-scrollbar-width, 0.5rem);
+        height: var(--onnus-scrollbar-hight, 0.5rem);
+    }
+
+    ::-webkit-scrollbar-track {
+        margin-left: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--onnus-scrollbar-thumb-color, hsla(0, 0%, 50%, 0.25));
+    }
+
+
+/* html */
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+
+/* onnus */
+
+    .onnus {
+        margin: 0;
+        padding: 0;
+        max-height: 100vh;
+        max-width: 100vw;
+        font-family: var(--onnus-font-family, arial, helvetica, sans-serif);
+        font-size: var(--onnus-font-size, medium);
+        background-color: var(--onnus-backgroup-color, white);
+        color: var(--onnus-font-color,black);
+        overflow: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/* onnus-border- */
+
+    .onnus-border-none-0px {border: 0px none;}
+
+    .onnus-border-solid-0px {border: 0px solid;}
+    .onnus-border-solid-1px {border: 1px solid;}
+    .onnus-border-solid-2px {border: 2px solid;}
+    .onnus-border-solid-3px {border: 3px solid;}
+    .onnus-border-solid-4px {border: 4px solid;}
+    .onnus-border-solid-5px {border: 5px solid;}
+
+    .onnus-border-top-none-0px {border-top: 0px none;}
+
+    .onnus-border-top-solid-0px {border-top: 0px solid;}
+    .onnus-border-top-solid-1px {border-top: 1px solid;}
+    .onnus-border-top-solid-2px {border-top: 2px solid;}
+    .onnus-border-top-solid-3px {border-top: 3px solid;}
+    .onnus-border-top-solid-4px {border-top: 4px solid;}
+    .onnus-border-top-solid-5px {border-top: 5px solid;}
+
+    .onnus-border-bottom-none-0px {border-bottom: 0px none;}
+
+    .onnus-border-bottom-solid-0px {border-bottom: 0px solid;}
+    .onnus-border-bottom-solid-1px {border-bottom: 1px solid;}
+    .onnus-border-bottom-solid-2px {border-bottom: 2px solid;}
+    .onnus-border-bottom-solid-3px {border-bottom: 3px solid;}
+    .onnus-border-bottom-solid-4px {border-bottom: 4px solid;}
+    .onnus-border-bottom-solid-5px {border-bottom: 5px solid;}
+
+    .onnus-border-left-none-0px {border-left: 0px none;}
+
+    .onnus-border-left-solid-0px {border-left: 0px solid;}
+    .onnus-border-left-solid-1px {border-left: 1px solid;}
+    .onnus-border-left-solid-2px {border-left: 2px solid;}
+    .onnus-border-left-solid-3px {border-left: 3px solid;}
+    .onnus-border-left-solid-4px {border-left: 4px solid;}
+    .onnus-border-left-solid-5px {border-left: 5px solid;}
+
+    .onnus-border-right-none-0px {border-right: 0px none;}
+
+    .onnus-border-right-solid-0px {border-right: 0px solid;}
+    .onnus-border-right-solid-1px {border-right: 1px solid;}
+    .onnus-border-right-solid-2px {border-right: 2px solid;}
+    .onnus-border-right-solid-3px {border-right: 3px solid;}
+    .onnus-border-right-solid-4px {border-right: 4px solid;}
+    .onnus-border-right-solid-5px {border-right: 5px solid;}
+
+
+/* onnus-content- */
+
+    .onnus-content {
+        max-width: 100vw; 
+        max-height: 100vh;
+
+        overflow: auto;
+
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .onnus-content-max {
+        position: absolute;
+        min-width: 100vw; 
+        min-height: 100vh;
+        max-width: 100%; 
+        max-height: 100%;
+
+        border: 0px;
+
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .onnus-content-min {
+        position: absolute;
+        min-width: 100%; 
+        min-height: 0vh;
+        max-height: 100%;
+
+        overflow: none;
+
+        display: flex; 
+        flex-direction: column;
+    }
+
+
+/* onnus-height- */
+
+    .onnus-height-auto {height: auto;}
+    .onnus-height-0px {height: 0px;}
+    .onnus-height-1px {height: 1px;}
+    .onnus-height-2px {height: 2px;}
+    .onnus-height-3px {height: 3px;}
+    .onnus-height-4px {height: 4px;}
+    .onnus-height-5px {height: 5px;}
+    .onnus-height-6px {height: 6px;}
+    .onnus-height-7px {height: 7px;}
+    .onnus-height-8px {height: 8px;}
+    .onnus-height-9px {height: 9px;}
+    .onnus-height-10px {height: 10px;}
+    .onnus-height-15px {height: 15px;}
+    .onnus-height-20px {height: 20px;}
+    .onnus-height-25px {height: 25px;}
+    .onnus-height-30px {height: 30px;}
+    .onnus-height-35px {height: 35px;}
+    .onnus-height-40px {height: 40px;}
+    .onnus-height-45px {height: 45px;}
+    .onnus-height-50px {height: 50px;}
+    .onnus-height-55px {height: 55px;}
+    .onnus-height-60px {height: 60px;}
+    .onnus-height-65px {height: 65px;}
+    .onnus-height-70px {height: 70px;}
+    .onnus-height-75px {height: 75px;}
+    .onnus-height-80px {height: 80px;}
+    .onnus-height-85px {height: 85px;}
+    .onnus-height-90px {height: 90px;}
+    .onnus-height-95px {height: 95px;}
+    .onnus-height-100px {height: 100px;}
+    .onnus-height-120px {height: 120px;}
+    .onnus-height-125px {height: 125px;}
+    .onnus-height-140px {height: 140px;}
+    .onnus-height-150px {height: 150px;}
+    .onnus-height-160px {height: 160px;}
+    .onnus-height-175px {height: 175px;}
+    .onnus-height-180px {height: 180px;}
+    .onnus-height-200px {height: 200px;}
+    .onnus-height-220px {height: 220px;}
+    .onnus-height-225px {height: 225px;}
+    .onnus-height-240px {height: 240px;}
+    .onnus-height-250px {height: 250px;}
+    .onnus-height-260px {height: 260px;}
+    .onnus-height-275px {height: 275px;}
+    .onnus-height-280px {height: 280px;}
+    .onnus-height-300px {height: 300px;}
+
+
+/* onnus-cursor- */
+
+    .onnus-cursor-pointer {cursor: pointer;}
+
+
+/* onnus-flex- */
+
+    .onnus-flex-wrap {display: flex; flex-wrap: wrap;}
+    .onnus-flex-nowrap {display: flex;flex-wrap: nowrap;}
+    .onnus-flex-reverse {display: flex; flex-wrap: wrap-reverse;}
+
+
+/* onnus-flex-column */
+
+    .onnus-flex-0 {flex: 0;}
+    .onnus-flex-1 {flex: 1;}
+    .onnus-flex-2 {flex: 2;}
+    .onnus-flex-3 {flex: 3;}
+    .onnus-flex-4 {flex: 4;}
+    .onnus-flex-5 {flex: 5;}
+    .onnus-flex-6 {flex: 6;}
+    .onnus-flex-7 {flex: 7;}
+    .onnus-flex-8 {flex: 8;}
+
+
+/* onnus-flex-column */
+
+    .onnus-flex-column {display: flex; flex: 0; flex-direction: column;}
+    .onnus-flex-column-1 {display: flex; flex: 1; flex-direction: column;}
+    .onnus-flex-column-2 {display: flex; flex: 2; flex-direction: column;}
+    .onnus-flex-column-3 {display: flex; flex: 3; flex-direction: column;}
+    .onnus-flex-column-4 {display: flex; flex: 4; flex-direction: column;}
+    .onnus-flex-column-5 {display: flex; flex: 5; flex-direction: column;}
+    .onnus-flex-column-6 {display: flex; flex: 6; flex-direction: column;}
+    .onnus-flex-column-7 {display: flex; flex: 7; flex-direction: column;}
+    .onnus-flex-column-8 {display: flex; flex: 8; flex-direction: column;}
+
+
+/* onnus-flex-row */
+
+    .onnus-flex-row, .onnus-flex-row-0 {display: flex; flex: 0; flex-direction: row;}
+    .onnus-flex-row-1 {display: flex; flex: 1; flex-direction: row;}
+    .onnus-flex-row-2 {display: flex; flex: 2; flex-direction: row;}
+    .onnus-flex-row-3 {display: flex; flex: 3; flex-direction: row;}
+    .onnus-flex-row-4 {display: flex; flex: 4; flex-direction: row;}
+    .onnus-flex-row-5 {display: flex; flex: 5; flex-direction: row;}
+    .onnus-flex-row-6 {display: flex; flex: 6; flex-direction: row;}
+    .onnus-flex-row-7 {display: flex; flex: 7; flex-direction: row;}
+    .onnus-flex-row-8 {display: flex; flex: 8; flex-direction: row;}
+
+
+/* onnus-flex-top */
+
+    .onnus-flex-top {display: flex; align-items: flex-start;}
+    .onnus-flex-top-left, .onnus-flex-left-top {display: flex; align-items: flex-start; justify-content: flex-start;}
+    .onnus-flex-top-center, .onnus-flex-center-top {display: flex; align-items: flex-start; justify-content: center;}
+    .onnus-flex-top-right, .onnus-flex-right-top {display: flex; align-items: flex-start; justify-content: flex-end;}
+
+
+/* onnus-flex-middle */
+
+    .onnus-flex-middle {display: flex; align-items: center;}
+    .onnus-flex-middle-left, .onnus-flex-left-middle {display: flex; align-items: center; justify-content: flex-start;}
+    .onnus-flex-core, .onnus-flex-center-middle, .onnus-flex-middle-center {display: flex;align-items: center;justify-content: center;}
+    .onnus-flex-middle-right, .onnus-flex-right-middle {display: flex; align-items: center; justify-content: flex-end;}
+
+
+/* onnus-flex-bottom */
+
+    .onnus-flex-bottom {display: flex; align-items: flex-end;}
+    .onnus-flex-bottom-left, .onnus-flex-left-bottom {display: flex; align-items: flex-end; justify-content: flex-start;}
+    .onnus-flex-bottom-center, .onnus-flex-center-bottom {display: flex; align-items: flex-end; justify-content: center;}
+    .onnus-flex-bottom-right, .onnus-flex-right-bottom {display: flex; align-items: flex-end; justify-content: flex-end;}
+
+
+/* onnus-flex-left */
+
+    .onnus-flex-left {display: flex; justify-content: flex-start;}
+
+
+/* onnus-flex-center */
+
+    .onnus-flex-center {display: flex; justify-content: center;}
+
+
+/* onnus-flex-right */
+
+    .onnus-flex-right {display: flex; justify-content: flex-end;}
+
+
+/* onnus-flex-space-between */
+
+    .onnus-flex-space-between {display: flex; justify-content: space-between;}
+
+
+/* onnus-font- */
+
+    .onnus-font-size-0 {font-size: 0%;}
+    .onnus-font-size-5 {font-size: 5%;}
+    .onnus-font-size-10 {font-size: 10%;}
+    .onnus-font-size-15 {font-size: 15%;}
+    .onnus-font-size-20 {font-size: 20%;}
+    .onnus-font-size-25 {font-size: 25%;}
+    .onnus-font-size-30 {font-size: 30%;}
+    .onnus-font-size-35 {font-size: 35%;}
+    .onnus-font-size-40 {font-size: 40%;}
+    .onnus-font-size-45 {font-size: 45%;}
+    .onnus-font-size-50 {font-size: 50%;}
+    .onnus-font-size-55 {font-size: 55%;}
+    .onnus-font-size-55 {font-size: 55%;}
+    .onnus-font-size-60 {font-size: 60%;}
+    .onnus-font-size-65 {font-size: 65%;}
+    .onnus-font-size-70 {font-size: 70%;}
+    .onnus-font-size-75 {font-size: 75%;}
+    .onnus-font-size-80 {font-size: 80%;}
+    .onnus-font-size-85 {font-size: 85%;}
+    .onnus-font-size-90 {font-size: 90%;}
+    .onnus-font-size-95 {font-size: 95%;}
+    .onnus-font-size-100 {font-size: 100%;}
+    .onnus-font-size-120 {font-size: 120%;}
+    .onnus-font-size-140 {font-size: 140%;}
+    .onnus-font-size-150 {font-size: 150%;}
+    .onnus-font-size-160 {font-size: 160%;}
+    .onnus-font-size-180 {font-size: 180%;}
+    .onnus-font-size-200 {font-size: 200%;}
+    .onnus-font-size-220 {font-size: 220%;}
+    .onnus-font-size-240 {font-size: 240%;}
+    .onnus-font-size-250 {font-size: 250%;}
+    .onnus-font-size-260 {font-size: 260%;}
+    .onnus-font-size-280 {font-size: 280%;}
+    .onnus-font-size-300 {font-size: 300%;}
+
+    .onnus-font-size-0px {font-size: 0px;}
+    .onnus-font-size-1px {font-size: 1px;}
+    .onnus-font-size-2px {font-size: 2px;}
+    .onnus-font-size-3px {font-size: 3px;}
+    .onnus-font-size-4px {font-size: 4px;}
+    .onnus-font-size-5px {font-size: 5px;}
+    .onnus-font-size-6px {font-size: 6px;}
+    .onnus-font-size-7px {font-size: 7px;}
+    .onnus-font-size-8px {font-size: 8px;}
+    .onnus-font-size-9px {font-size: 9px;}
+    .onnus-font-size-10px {font-size: 10px;}
+    .onnus-font-size-11px {font-size: 11px;}
+    .onnus-font-size-12px {font-size: 12px;}
+    .onnus-font-size-13px {font-size: 13px;}
+    .onnus-font-size-14px {font-size: 14px;}
+    .onnus-font-size-15px {font-size: 15px;}
+    .onnus-font-size-16px {font-size: 16px;}
+    .onnus-font-size-17px {font-size: 17px;}
+    .onnus-font-size-18px {font-size: 18px;}
+    .onnus-font-size-19px {font-size: 19px;}
+    .onnus-font-size-20px {font-size: 20px;}
+    .onnus-font-size-22px {font-size: 22px;}
+    .onnus-font-size-24px {font-size: 24px;}
+    .onnus-font-size-25px {font-size: 25px;}
+    .onnus-font-size-26px {font-size: 26px;}
+    .onnus-font-size-28px {font-size: 28px;}
+    .onnus-font-size-30px {font-size: 30px;}
+    .onnus-font-size-32px {font-size: 32px;}
+    .onnus-font-size-34px {font-size: 34px;}
+    .onnus-font-size-35px {font-size: 35px;}
+    .onnus-font-size-36px {font-size: 36px;}
+    .onnus-font-size-38px {font-size: 38px;}
+    .onnus-font-size-40px {font-size: 40px;}
+    .onnus-font-size-42px {font-size: 42px;}
+    .onnus-font-size-44px {font-size: 44px;}
+    .onnus-font-size-45px {font-size: 45px;}
+    .onnus-font-size-46px {font-size: 46px;}
+    .onnus-font-size-48px {font-size: 48px;}
+    .onnus-font-size-50px {font-size: 50px;}
+    .onnus-font-size-60px {font-size: 60px;}
+    .onnus-font-size-70px {font-size: 70px;}
+    .onnus-font-size-80px {font-size: 80px;}
+    .onnus-font-size-90px {font-size: 90px;}
+    .onnus-font-size-100px {font-size: 100px;}
+
+    .onnus-font-size-xx-small {font-size: xx-small;}
+    .onnus-font-size-x-small {font-size: x-small;}
+    .onnus-font-size-smaller {font-size: smaller;}
+    .onnus-font-size-small {font-size: small;}
+    .onnus-font-size-medium {font-size: medium;}
+    .onnus-font-size-large {font-size: large;}
+    .onnus-font-size-x-large {font-size: x-large;}
+    .onnus-font-size-xx-large {font-size: xx-large;}
+
+    .onnus-font-weight-100 {font-weight: 100;}
+    .onnus-font-weight-200 {font-weight: 200;}
+    .onnus-font-weight-300 {font-weight: 300;}
+    .onnus-font-weight-400 {font-weight: 400;}
+    .onnus-font-weight-500 {font-weight: 500;}
+    .onnus-font-weight-600 {font-weight: 600;}
+    .onnus-font-weight-700 {font-weight: 700;}
+    .onnus-font-weight-800 {font-weight: 800;}
+    .onnus-font-weight-900 {font-weight: 900;}
+    .onnus-font-weight-normal {font-weight: normal;}
+    .onnus-font-weight-lighter {font-weight: lighter;}
+    .onnus-font-weight-bold {font-weight: bold;}
+    .onnus-font-weight-bolder {font-weight: bolder;}
+
+/* onnus-grid-  */
+
+    .onnus-grid-rows-0 {display: grid; grid-template-rows: repeat(0, 1fr);}
+    .onnus-grid-rows-1 {display: grid; grid-template-rows: repeat(1, 1fr);}
+    .onnus-grid-rows-2 {display: grid; grid-template-rows: repeat(2, 1fr);}
+    .onnus-grid-rows-3 {display: grid; grid-template-rows: repeat(3, 1fr);}
+    .onnus-grid-rows-4 {display: grid; grid-template-rows: repeat(4, 1fr);}
+    .onnus-grid-rows-5 {display: grid; grid-template-rows: repeat(5, 1fr);}
+    .onnus-grid-rows-6 {display: grid; grid-template-rows: repeat(6, 1fr);}
+    .onnus-grid-rows-7 {display: grid; grid-template-rows: repeat(7, 1fr);}
+    .onnus-grid-rows-8 {display: grid; grid-template-rows: repeat(8, 1fr);}
+    .onnus-grid-rows-9 {display: grid; grid-template-rows: repeat(9, 1fr);}
+    .onnus-grid-rows-10 {display: grid; grid-template-rows: repeat(10, 1fr);}
+    .onnus-grid-rows-12 {display: grid; grid-template-rows: repeat(12, 1fr);}
+    .onnus-grid-rows-14 {display: grid; grid-template-rows: repeat(14, 1fr);}
+    .onnus-grid-rows-15 {display: grid; grid-template-rows: repeat(15, 1fr);}
+    .onnus-grid-rows-16 {display: grid; grid-template-rows: repeat(16, 1fr);}
+    .onnus-grid-rows-18 {display: grid; grid-template-rows: repeat(18, 1fr);}
+    .onnus-grid-rows-20 {display: grid; grid-template-rows: repeat(20, 1fr);}
+
+    .onnus-grid-columns-0 {display: grid; grid-template-columns: repeat(0, 1fr);}
+    .onnus-grid-columns-1 {display: grid; grid-template-columns: repeat(1, 1fr);}
+    .onnus-grid-columns-2 {display: grid; grid-template-columns: repeat(2, 1fr);}
+    .onnus-grid-columns-3 {display: grid; grid-template-columns: repeat(3, 1fr);}
+    .onnus-grid-columns-4 {display: grid; grid-template-columns: repeat(4, 1fr);}
+    .onnus-grid-columns-5 {display: grid; grid-template-columns: repeat(5, 1fr);}
+    .onnus-grid-columns-6 {display: grid; grid-template-columns: repeat(6, 1fr);}
+    .onnus-grid-columns-7 {display: grid; grid-template-columns: repeat(7, 1fr);}
+    .onnus-grid-columns-8 {display: grid; grid-template-columns: repeat(8, 1fr);}
+    .onnus-grid-columns-9 {display: grid; grid-template-columns: repeat(9, 1fr);}
+    .onnus-grid-columns-10 {display: grid; grid-template-columns: repeat(10, 1fr);}
+    .onnus-grid-columns-12 {display: grid; grid-template-columns: repeat(12, 1fr);}
+    .onnus-grid-columns-14 {display: grid; grid-template-columns: repeat(14, 1fr);}
+    .onnus-grid-columns-15 {display: grid; grid-template-columns: repeat(15, 1fr);}
+    .onnus-grid-columns-16 {display: grid; grid-template-columns: repeat(16, 1fr);}
+    .onnus-grid-columns-18 {display: grid; grid-template-columns: repeat(18, 1fr);}
+    .onnus-grid-columns-20 {display: grid; grid-template-columns: repeat(20, 1fr);}
+
+
+/* onnus-margin- */
+
+    .onnus-margin-0px {margin: 0px;}
+    .onnus-margin-1px {margin: 1px;}
+    .onnus-margin-2px {margin: 2px;}
+    .onnus-margin-3px {margin: 3px;}
+    .onnus-margin-4px {margin: 4px;}
+    .onnus-margin-5px {margin: 5px;}
+    .onnus-margin-6px {margin: 6px;}
+    .onnus-margin-7px {margin: 7px;}
+    .onnus-margin-8px {margin: 8px;}
+    .onnus-margin-9px {margin: 9px;}
+    .onnus-margin-10px {margin: 10px;}
+    .onnus-margin-15px {margin: 15px;}
+    .onnus-margin-20px {margin: 20px;}
+
+    .onnus-margin-left-0px {margin-left: 0px;}
+    .onnus-margin-left-1px {margin-left: 1px;}
+    .onnus-margin-left-2px {margin-left: 2px;}
+    .onnus-margin-left-3px {margin-left: 3px;}
+    .onnus-margin-left-4px {margin-left: 4px;}
+    .onnus-margin-left-5px {margin-left: 5px;}
+    .onnus-margin-left-6px {margin-left: 6px;}
+    .onnus-margin-left-7px {margin-left: 7px;}
+    .onnus-margin-left-8px {margin-left: 8px;}
+    .onnus-margin-left-9px {margin-left: 9px;}
+    .onnus-margin-left-10px {margin-left: 10px;}
+    .onnus-margin-left-15px {margin-left: 15px;}
+    .onnus-margin-left-20px {margin-left: 20px;}
+    .onnus-margin-left-25px {margin-left: 25px;}
+
+    .onnus-margin-right-0px {margin-right: 0px;}
+    .onnus-margin-right-1px {margin-right: 1px;}
+    .onnus-margin-right-2px {margin-right: 2px;}
+    .onnus-margin-right-3px {margin-right: 3px;}
+    .onnus-margin-right-4px {margin-right: 4px;}
+    .onnus-margin-right-5px {margin-right: 5px;}
+    .onnus-margin-right-6px {margin-right: 6px;}
+    .onnus-margin-right-7px {margin-right: 7px;}
+    .onnus-margin-right-8px {margin-right: 8px;}
+    .onnus-margin-right-9px {margin-right: 9px;}
+    .onnus-margin-right-10px {margin-right: 10px;}
+    .onnus-margin-right-15px {margin-right: 15px;}
+    .onnus-margin-right-20px {margin-right: 20px;}
+    .onnus-margin-right-25px {margin-right: 25px;}
+
+    .onnus-margin-right-left-0px, .onnus-margin-left-right-0px {margin-left: 0px; margin-right: 0px;}
+    .onnus-margin-right-left-1px, .onnus-margin-left-right-1px {margin-left: 1px; margin-right: 1px;}
+    .onnus-margin-right-left-2px, .onnus-margin-left-right-2px {margin-left: 2px; margin-right: 2px;}
+    .onnus-margin-right-left-3px, .onnus-margin-left-right-3px {margin-left: 3px; margin-right: 3px;}
+    .onnus-margin-right-left-4px, .onnus-margin-left-right-4px {margin-left: 4px; margin-right: 4px;}
+    .onnus-margin-right-left-5px, .onnus-margin-left-right-5px {margin-left: 5px; margin-right: 5px;}
+    .onnus-margin-right-left-6px, .onnus-margin-left-right-6px {margin-left: 6px; margin-right: 6px;}
+    .onnus-margin-right-left-7px, .onnus-margin-left-right-7px {margin-left: 7px; margin-right: 7px;}
+    .onnus-margin-right-left-8px, .onnus-margin-left-right-8px {margin-left: 8px; margin-right: 8px;}
+    .onnus-margin-right-left-9px, .onnus-margin-left-right-9px {margin-left: 9px; margin-right: 9px;}
+    .onnus-margin-right-left-10px, .onnus-margin-left-right-10px {margin-left: 10px; margin-right: 10px;}
+    .onnus-margin-right-left-15px, .onnus-margin-left-right-15px {margin-left: 15px; margin-right: 15px;}
+    .onnus-margin-right-left-20px, .onnus-margin-left-right-20px {margin-left: 20px; margin-right: 20px;}
+    .onnus-margin-right-left-25px, .onnus-margin-left-right-25px {margin-left: 25px; margin-right: 25px;}
+
+    .onnus-margin-top-0px {margin-top: 0px;}
+    .onnus-margin-top-1px {margin-top: 1px;}
+    .onnus-margin-top-2px {margin-top: 2px;}
+    .onnus-margin-top-3px {margin-top: 3px;}
+    .onnus-margin-top-4px {margin-top: 4px;}
+    .onnus-margin-top-5px {margin-top: 5px;}
+    .onnus-margin-top-6px {margin-top: 6px;}
+    .onnus-margin-top-7px {margin-top: 7px;}
+    .onnus-margin-top-8px {margin-top: 8px;}
+    .onnus-margin-top-9px {margin-top: 9px;}
+    .onnus-margin-top-10px {margin-top: 10px;}
+    .onnus-margin-top-15px {margin-top: 15px;}
+    .onnus-margin-top-20px {margin-top: 20px;}
+    .onnus-margin-top-25px {margin-top: 25px;}
+
+    .onnus-margin-bottom-0px {margin-bottom: 0px;}
+    .onnus-margin-bottom-1px {margin-bottom: 1px;}
+    .onnus-margin-bottom-2px {margin-bottom: 2px;}
+    .onnus-margin-bottom-3px {margin-bottom: 3px;}
+    .onnus-margin-bottom-4px {margin-bottom: 4px;}
+    .onnus-margin-bottom-5px {margin-bottom: 5px;}
+    .onnus-margin-bottom-6px {margin-bottom: 6px;}
+    .onnus-margin-bottom-7px {margin-bottom: 7px;}
+    .onnus-margin-bottom-8px {margin-bottom: 8px;}
+    .onnus-margin-bottom-9px {margin-bottom: 9px;}
+    .onnus-margin-bottom-10px {margin-bottom: 10px;}
+    .onnus-margin-bottom-15px {margin-bottom: 15px;}
+    .onnus-margin-bottom-20px {margin-bottom: 20px;}
+    .onnus-margin-bottom-25px {margin-bottom: 25px;}
+
+    .onnus-margin-top-bottom-0px, .onnus-margin-bottom-top-0px {margin-top: 0px; margin-bottom: 0px;}
+    .onnus-margin-top-bottom-1px, .onnus-margin-bottom-top-1px {margin-top: 1px; margin-bottom: 1px;}
+    .onnus-margin-top-bottom-2px, .onnus-margin-bottom-top-2px {margin-top: 2px; margin-bottom: 2px;}
+    .onnus-margin-top-bottom-3px, .onnus-margin-bottom-top-3px {margin-top: 3px; margin-bottom: 3px;}
+    .onnus-margin-top-bottom-4px, .onnus-margin-bottom-top-4px {margin-top: 4px; margin-bottom: 4px;}
+    .onnus-margin-top-bottom-5px, .onnus-margin-bottom-top-5px {margin-top: 5px; margin-bottom: 5px;}
+    .onnus-margin-top-bottom-6px, .onnus-margin-bottom-top-6px {margin-top: 6px; margin-bottom: 6px;}
+    .onnus-margin-top-bottom-7px, .onnus-margin-bottom-top-7px {margin-top: 7px; margin-bottom: 7px;}
+    .onnus-margin-top-bottom-8px, .onnus-margin-bottom-top-8px {margin-top: 8px; margin-bottom: 8px;}
+    .onnus-margin-top-bottom-9px, .onnus-margin-bottom-top-9px {margin-top: 9px; margin-bottom: 9px;}
+    .onnus-margin-top-bottom-10px, .onnus-margin-bottom-top-10px {margin-top: 10px; margin-bottom: 10px;}
+    .onnus-margin-top-bottom-15px, .onnus-margin-bottom-top-15px {margin-top: 15px; margin-bottom: 15px;}
+    .onnus-margin-top-bottom-20px, .onnus-margin-bottom-top-20px {margin-top: 20px; margin-bottom: 20px;}
+    .onnus-margin-top-bottom-25px, .onnus-margin-bottom-top-25px {margin-top: 25px; margin-bottom: 25px;}
+
+
+/* onnus-margin-padding- */
+
+    .onnus-margin-padding-0px, .onnus-padding-margin-0px {margin: 0px; padding: 0px;}
+    .onnus-margin-padding-1px, .onnus-padding-margin-1px {margin: 1px; padding: 1px;}
+    .onnus-margin-padding-2px, .onnus-padding-margin-2px {margin: 2px; padding: 2px;}
+    .onnus-margin-padding-3px, .onnus-padding-margin-3px {margin: 3px; padding: 3px;}
+    .onnus-margin-padding-4px, .onnus-padding-margin-4px {margin: 4px; padding: 4px;}
+    .onnus-margin-padding-5px, .onnus-padding-margin-5px {margin: 5px; padding: 5px;}
+
+
+/* onnus-max-height */
+
+    .onnus-max-height-none {max-height: none;}
+    .onnus-max-height-0 {max-height: 0%;}
+    .onnus-max-height-5 {max-height: 5%;}
+    .onnus-max-height-10 {max-height: 10%;}
+    .onnus-max-height-15 {max-height: 15%;}
+    .onnus-max-height-20 {max-height: 20%;}
+    .onnus-max-height-25 {max-height: 25%;}
+    .onnus-max-height-30 {max-height: 30%;}
+    .onnus-max-height-35 {max-height: 35%;}
+    .onnus-max-height-40 {max-height: 40%;}
+    .onnus-max-height-45 {max-height: 45%;}
+    .onnus-max-height-50 {max-height: 50%;}
+    .onnus-max-height-55 {max-height: 55%;}
+    .onnus-max-height-60 {max-height: 60%;}
+    .onnus-max-height-65 {max-height: 65%;}
+    .onnus-max-height-70 {max-height: 70%;}
+    .onnus-max-height-75 {max-height: 75%;}
+    .onnus-max-height-80 {max-height: 80%;}
+    .onnus-max-height-85 {max-height: 85%;}
+    .onnus-max-height-90 {max-height: 90%;}
+    .onnus-max-height-95 {max-height: 95%;}
+    .onnus-max-height-100 {max-height: 100%;}
+
+    .onnus-max-height-0px {max-height: 0px;}
+    .onnus-max-height-1px {max-height: 1px;}
+    .onnus-max-height-2px {max-height: 2px;}
+    .onnus-max-height-3px {max-height: 3px;}
+    .onnus-max-height-4px {max-height: 4px;}
+    .onnus-max-height-5px {max-height: 5px;}
+    .onnus-max-height-6px {max-height: 6px;}
+    .onnus-max-height-7px {max-height: 7px;}
+    .onnus-max-height-8px {max-height: 8px;}
+    .onnus-max-height-9px {max-height: 9px;}
+    .onnus-max-height-10px {max-height: 10px;}
+    .onnus-max-height-15px {max-height: 15px;}
+    .onnus-max-height-20px {max-height: 20px;}
+    .onnus-max-height-25px {max-height: 25px;}
+    .onnus-max-height-30px {max-height: 30px;}
+    .onnus-max-height-35px {max-height: 35px;}
+    .onnus-max-height-40px {max-height: 40px;}
+    .onnus-max-height-45px {max-height: 45px;}
+    .onnus-max-height-50px {max-height: 50px;}
+    .onnus-max-height-55px {max-height: 55px;}
+    .onnus-max-height-60px {max-height: 60px;}
+    .onnus-max-height-65px {max-height: 65px;}
+    .onnus-max-height-70px {max-height: 70px;}
+    .onnus-max-height-75px {max-height: 75px;}
+    .onnus-max-height-80px {max-height: 80px;}
+    .onnus-max-height-85px {max-height: 85px;}
+    .onnus-max-height-90px {max-height: 90px;}
+    .onnus-max-height-95px {max-height: 95px;}
+    .onnus-max-height-100px {max-height: 100px;}
+    .onnus-max-height-120px {max-height: 120px;}
+    .onnus-max-height-125px {max-height: 125px;}
+    .onnus-max-height-140px {max-height: 140px;}
+    .onnus-max-height-150px {max-height: 150px;}
+    .onnus-max-height-160px {max-height: 160px;}
+    .onnus-max-height-175px {max-height: 175px;}
+    .onnus-max-height-180px {max-height: 180px;}
+    .onnus-max-height-200px {max-height: 200px;}
+    .onnus-max-height-220px {max-height: 220px;}
+    .onnus-max-height-225px {max-height: 225px;}
+    .onnus-max-height-240px {max-height: 240px;}
+    .onnus-max-height-250px {max-height: 250px;}
+    .onnus-max-height-260px {max-height: 260px;}
+    .onnus-max-height-275px {max-height: 275px;}
+    .onnus-max-height-280px {max-height: 280px;}
+    .onnus-max-height-300px {max-height: 300px;}
+
+
+/* onnus-max-width- */
+
+    .onnus-max-width-none {max-width: none;}
+    .onnus-max-width-0 {max-width: 0%;}
+    .onnus-max-width-5 {max-width: 5%;}
+    .onnus-max-width-10 {max-width: 10%;}
+    .onnus-max-width-15 {max-width: 15%;}
+    .onnus-max-width-20 {max-width: 20%;}
+    .onnus-max-width-25 {max-width: 25%;}
+    .onnus-max-width-30 {max-width: 30%;}
+    .onnus-max-width-35 {max-width: 35%;}
+    .onnus-max-width-40 {max-width: 40%;}
+    .onnus-max-width-45 {max-width: 45%;}
+    .onnus-max-width-50 {max-width: 50%;}
+    .onnus-max-width-55 {max-width: 55%;}
+    .onnus-max-width-60 {max-width: 60%;}
+    .onnus-max-width-65 {max-width: 65%;}
+    .onnus-max-width-70 {max-width: 70%;}
+    .onnus-max-width-75 {max-width: 75%;}
+    .onnus-max-width-80 {max-width: 80%;}
+    .onnus-max-width-85 {max-width: 85%;}
+    .onnus-max-width-90 {max-width: 90%;}
+    .onnus-max-width-95 {max-width: 95%;}
+    .onnus-max-width-100 {max-width: 100%;}
+
+    .onnus-max-width-0px {max-width: 0px;}
+    .onnus-max-width-1px {max-width: 1px;}
+    .onnus-max-width-2px {max-width: 2px;}
+    .onnus-max-width-3px {max-width: 3px;}
+    .onnus-max-width-4px {max-width: 4px;}
+    .onnus-max-width-5px {max-width: 5px;}
+    .onnus-max-width-6px {max-width: 6px;}
+    .onnus-max-width-7px {max-width: 7px;}
+    .onnus-max-width-8px {max-width: 8px;}
+    .onnus-max-width-9px {max-width: 9px;}
+    .onnus-max-width-10px {max-width: 10px;}
+    .onnus-max-width-15px {max-width: 15px;}
+    .onnus-max-width-20px {max-width: 20px;}
+    .onnus-max-width-25px {max-width: 25px;}
+    .onnus-max-width-30px {max-width: 30px;}
+    .onnus-max-width-35px {max-width: 35px;}
+    .onnus-max-width-40px {max-width: 40px;}
+    .onnus-max-width-45px {max-width: 45px;}
+    .onnus-max-width-50px {max-width: 50px;}
+    .onnus-max-width-55px {max-width: 55px;}
+    .onnus-max-width-60px {max-width: 60px;}
+    .onnus-max-width-65px {max-width: 65px;}
+    .onnus-max-width-70px {max-width: 70px;}
+    .onnus-max-width-75px {max-width: 75px;}
+    .onnus-max-width-80px {max-width: 80px;}
+    .onnus-max-width-85px {max-width: 85px;}
+    .onnus-max-width-90px {max-width: 90px;}
+    .onnus-max-width-95px {max-width: 95px;}
+    .onnus-max-width-100px {max-width: 100px;}
+    .onnus-max-width-120px {max-width: 120px;}
+    .onnus-max-width-125px {max-width: 125px;}
+    .onnus-max-width-140px {max-width: 140px;}
+    .onnus-max-width-150px {max-width: 150px;}
+    .onnus-max-width-160px {max-width: 160px;}
+    .onnus-max-width-175px {max-width: 175px;}
+    .onnus-max-width-180px {max-width: 180px;}
+    .onnus-max-width-200px {max-width: 200px;}
+    .onnus-max-width-220px {max-width: 220px;}
+    .onnus-max-width-225px {max-width: 225px;}
+    .onnus-max-width-240px {max-width: 240px;}
+    .onnus-max-width-250px {max-width: 250px;}
+    .onnus-max-width-260px {max-width: 260px;}
+    .onnus-max-width-275px {max-width: 275px;}
+    .onnus-max-width-280px {max-width: 280px;}
+    .onnus-max-width-300px {max-width: 300px;}
+
+
+/* onnus-max-min-height */
+
+    .onnus-max-min-height-none, .onnus-min-max-height-none {max-height: none; min-height: none;}
+    .onnus-max-min-height-10px, .onnus-min-max-height-10px {max-height: 10px; min-height: 10px;}
+    .onnus-max-min-height-15px, .onnus-min-max-height-15px {max-height: 15px; min-height: 15px;}
+    .onnus-max-min-height-20px, .onnus-min-max-height-20px {max-height: 20px; min-height: 20px;}
+    .onnus-max-min-height-25px, .onnus-min-max-height-25px {max-height: 25px; min-height: 25px;}
+    .onnus-max-min-height-30px, .onnus-min-max-height-30px {max-height: 30px; min-height: 30px;}
+    .onnus-max-min-height-35px, .onnus-min-max-height-35px {max-height: 35px; min-height: 35px;}
+    .onnus-max-min-height-40px, .onnus-min-max-height-40px {max-height: 40px; min-height: 40px;}
+    .onnus-max-min-height-45px, .onnus-min-max-height-45px {max-height: 45px; min-height: 45px;}
+    .onnus-max-min-height-50px, .onnus-min-max-height-50px {max-height: 50px; min-height: 50px;}
+    .onnus-max-min-height-55px, .onnus-min-max-height-55px {max-height: 55px; min-height: 55px;}
+    .onnus-max-min-height-60px, .onnus-min-max-height-60px {max-height: 60px; min-height: 60px;}
+    .onnus-max-min-height-65px, .onnus-min-max-height-65px {max-height: 65px; min-height: 65px;}
+    .onnus-max-min-height-70px, .onnus-min-max-height-70px {max-height: 70px; min-height: 70px;}
+    .onnus-max-min-height-75px, .onnus-min-max-height-75px {max-height: 75px; min-height: 75px;}
+    .onnus-max-min-height-80px, .onnus-min-max-height-80px {max-height: 80px; min-height: 80px;}
+    .onnus-max-min-height-85px, .onnus-min-max-height-85px {max-height: 85px; min-height: 85px;}
+    .onnus-max-min-height-90px, .onnus-min-max-height-90px {max-height: 90px; min-height: 90px;}
+    .onnus-max-min-height-95px, .onnus-min-max-height-95px {max-height: 95px; min-height: 95px;}
+    .onnus-max-min-height-100px, .onnus-min-max-height-100px {max-height: 100px; min-height: 100px;}
+    .onnus-max-min-height-120px, .onnus-min-max-height-120px {max-height: 120px; min-height: 120px;}
+    .onnus-max-min-height-125px, .onnus-min-max-height-125px {max-height: 125px; min-height: 125px;}
+    .onnus-max-min-height-140px, .onnus-min-max-height-140px {max-height: 140px; min-height: 140px;}
+    .onnus-max-min-height-150px, .onnus-min-max-height-150px {max-height: 150px; min-height: 150px;}
+    .onnus-max-min-height-160px, .onnus-min-max-height-160px {max-height: 160px; min-height: 160px;}
+    .onnus-max-min-height-175px, .onnus-min-max-height-175px {max-height: 175px; min-height: 175px;}
+    .onnus-max-min-height-180px, .onnus-min-max-height-180px {max-height: 180px; min-height: 180px;}
+    .onnus-max-min-height-200px, .onnus-min-max-height-200px {max-height: 200px; min-height: 200px;}
+    .onnus-max-min-height-220px, .onnus-min-max-height-220px {max-height: 220px; min-height: 220px;}
+    .onnus-max-min-height-225px, .onnus-min-max-height-225px {max-height: 225px; min-height: 225px;}
+    .onnus-max-min-height-240px, .onnus-min-max-height-240px {max-height: 240px; min-height: 240px;}
+    .onnus-max-min-height-250px, .onnus-min-max-height-250px {max-height: 250px; min-height: 250px;}
+    .onnus-max-min-height-260px, .onnus-min-max-height-260px {max-height: 260px; min-height: 260px;}
+    .onnus-max-min-height-275px, .onnus-min-max-height-275px {max-height: 275px; min-height: 275px;}
+    .onnus-max-min-height-280px, .onnus-min-max-height-280px {max-height: 280px; min-height: 280px;}
+    .onnus-max-min-height-300px, .onnus-min-max-height-300px {max-height: 300px; min-height: 300px;}
+
+    .onnus-max-min-width-none, .onnus-min-max-width-none {max-width: none; min-width: none;}
+    .onnus-max-min-width-10px, .onnus-min-max-width-10px {max-width: 10px; min-width: 10px;}
+    .onnus-max-min-width-15px, .onnus-min-max-width-15px {max-width: 15px; min-width: 15px;}
+    .onnus-max-min-width-20px, .onnus-min-max-width-20px {max-width: 20px; min-width: 20px;}
+    .onnus-max-min-width-25px, .onnus-min-max-width-25px {max-width: 25px; min-width: 25px;}
+    .onnus-max-min-width-30px, .onnus-min-max-width-30px {max-width: 30px; min-width: 30px;}
+    .onnus-max-min-width-35px, .onnus-min-max-width-35px {max-width: 35px; min-width: 35px;}
+    .onnus-max-min-width-40px, .onnus-min-max-width-40px {max-width: 40px; min-width: 40px;}
+    .onnus-max-min-width-45px, .onnus-min-max-width-45px {max-width: 45px; min-width: 45px;}
+    .onnus-max-min-width-50px, .onnus-min-max-width-50px {max-width: 50px; min-width: 50px;}
+    .onnus-max-min-width-55px, .onnus-min-max-width-55px {max-width: 55px; min-width: 55px;}
+    .onnus-max-min-width-60px, .onnus-min-max-width-60px {max-width: 60px; min-width: 60px;}
+    .onnus-max-min-width-65px, .onnus-min-max-width-65px {max-width: 65px; min-width: 65px;}
+    .onnus-max-min-width-70px, .onnus-min-max-width-70px {max-width: 70px; min-width: 70px;}
+    .onnus-max-min-width-75px, .onnus-min-max-width-75px {max-width: 75px; min-width: 75px;}
+    .onnus-max-min-width-80px, .onnus-min-max-width-80px {max-width: 80px; min-width: 80px;}
+    .onnus-max-min-width-85px, .onnus-min-max-width-85px {max-width: 85px; min-width: 85px;}
+    .onnus-max-min-width-90px, .onnus-min-max-width-90px {max-width: 90px; min-width: 90px;}
+    .onnus-max-min-width-95px, .onnus-min-max-width-95px {max-width: 95px; min-width: 95px;}
+    .onnus-max-min-width-100px, .onnus-min-max-width-100px {max-width: 100px; min-width: 100px;}
+    .onnus-max-min-width-120px, .onnus-min-max-width-120px {max-width: 120px; min-width: 120px;}
+    .onnus-max-min-width-125px, .onnus-min-max-width-125px {max-width: 125px; min-width: 125px;}
+    .onnus-max-min-width-140px, .onnus-min-max-width-140px {max-width: 140px; min-width: 140px;}
+    .onnus-max-min-width-150px, .onnus-min-max-width-150px {max-width: 150px; min-width: 150px;}
+    .onnus-max-min-width-160px, .onnus-min-max-width-160px {max-width: 160px; min-width: 160px;}
+    .onnus-max-min-width-175px, .onnus-min-max-width-175px {max-width: 175px; min-width: 175px;}
+    .onnus-max-min-width-180px, .onnus-min-max-width-180px {max-width: 180px; min-width: 180px;}
+    .onnus-max-min-width-200px, .onnus-min-max-width-200px {max-width: 200px; min-width: 200px;}
+    .onnus-max-min-width-220px, .onnus-min-max-width-220px {max-width: 220px; min-width: 220px;}
+    .onnus-max-min-width-225px, .onnus-min-max-width-225px {max-width: 225px; min-width: 225px;}
+    .onnus-max-min-width-240px, .onnus-min-max-width-240px {max-width: 240px; min-width: 240px;}
+    .onnus-max-min-width-250px, .onnus-min-max-width-250px {max-width: 250px; min-width: 250px;}
+    .onnus-max-min-width-260px, .onnus-min-max-width-260px {max-width: 260px; min-width: 260px;}
+    .onnus-max-min-width-275px, .onnus-min-max-width-275px {max-width: 275px; min-width: 275px;}
+    .onnus-max-min-width-280px, .onnus-min-max-width-280px {max-width: 280px; min-width: 280px;}
+    .onnus-max-min-width-300px, .onnus-min-max-width-300px {max-width: 300px; min-width: 300px;}
+
+    .onnus-min-height-none {min-height: none;}
+    .onnus-min-height-auto {min-height: auto;}
+    .onnus-min-height-0 {min-height: 0%;}
+    .onnus-min-height-5 {min-height: 5%;}
+    .onnus-min-height-10 {min-height: 10%;}
+    .onnus-min-height-15 {min-height: 15%;}
+    .onnus-min-height-20 {min-height: 20%;}
+    .onnus-min-height-25 {min-height: 25%;}
+    .onnus-min-height-30 {min-height: 30%;}
+    .onnus-min-height-35 {min-height: 35%;}
+    .onnus-min-height-40 {min-height: 40%;}
+    .onnus-min-height-45 {min-height: 45%;}
+    .onnus-min-height-50 {min-height: 50%;}
+    .onnus-min-height-55 {min-height: 55%;}
+    .onnus-min-height-60 {min-height: 60%;}
+    .onnus-min-height-65 {min-height: 65%;}
+    .onnus-min-height-70 {min-height: 70%;}
+    .onnus-min-height-75 {min-height: 75%;}
+    .onnus-min-height-80 {min-height: 80%;}
+    .onnus-min-height-85 {min-height: 85%;}
+    .onnus-min-height-90 {min-height: 90%;}
+    .onnus-min-height-95 {min-height: 95%;}
+    .onnus-min-height-100 {min-height: 100%;}
+
+    .onnus-min-height-0px {min-height: 0px;}
+    .onnus-min-height-1px {min-height: 1px;}
+    .onnus-min-height-2px {min-height: 2px;}
+    .onnus-min-height-3px {min-height: 3px;}
+    .onnus-min-height-4px {min-height: 4px;}
+    .onnus-min-height-5px {min-height: 5px;}
+    .onnus-min-height-6px {min-height: 6px;}
+    .onnus-min-height-7px {min-height: 7px;}
+    .onnus-min-height-8px {min-height: 8px;}
+    .onnus-min-height-9px {min-height: 9px;}
+    .onnus-min-height-10px {min-height: 10px;}
+    .onnus-min-height-15px {min-height: 15px;}
+    .onnus-min-height-20px {min-height: 20px;}
+    .onnus-min-height-25px {min-height: 25px;}
+    .onnus-min-height-30px {min-height: 30px;}
+    .onnus-min-height-35px {min-height: 35px;}
+    .onnus-min-height-40px {min-height: 40px;}
+    .onnus-min-height-45px {min-height: 45px;}
+    .onnus-min-height-50px {min-height: 50px;}
+    .onnus-min-height-55px {min-height: 55px;}
+    .onnus-min-height-60px {min-height: 60px;}
+    .onnus-min-height-65px {min-height: 65px;}
+    .onnus-min-height-70px {min-height: 70px;}
+    .onnus-min-height-75px {min-height: 75px;}
+    .onnus-min-height-80px {min-height: 80px;}
+    .onnus-min-height-85px {min-height: 85px;}
+    .onnus-min-height-90px {min-height: 90px;}
+    .onnus-min-height-95px {min-height: 95px;}
+    .onnus-min-height-100px {min-height: 100px;}
+    .onnus-min-height-105px {min-height: 105px;}
+    .onnus-min-height-110px {min-height: 110px;}
+    .onnus-min-height-115px {min-height: 115px;}
+    .onnus-min-height-120px {min-height: 120px;}
+    .onnus-min-height-125px {min-height: 125px;}
+    .onnus-min-height-140px {min-height: 140px;}
+    .onnus-min-height-150px {min-height: 150px;}
+    .onnus-min-height-160px {min-height: 160px;}
+    .onnus-min-height-175px {min-height: 175px;}
+    .onnus-min-height-180px {min-height: 180px;}
+    .onnus-min-height-200px {min-height: 200px;}
+    .onnus-min-height-220px {min-height: 220px;}
+    .onnus-min-height-225px {min-height: 225px;}
+    .onnus-min-height-240px {min-height: 240px;}
+    .onnus-min-height-250px {min-height: 250px;}
+    .onnus-min-height-260px {min-height: 260px;}
+    .onnus-min-height-275px {min-height: 275px;}
+    .onnus-min-height-280px {min-height: 280px;}
+    .onnus-min-height-300px {min-height: 300px;}
+
+    .onnus-min-width-none {min-width: none;}
+    .onnus-min-width-auto {min-width: auto;}
+    .onnus-min-width-0 {min-width: 0%;}
+    .onnus-min-width-5 {min-width: 5%;}
+    .onnus-min-width-10 {min-width: 10%;}
+    .onnus-min-width-15 {min-width: 15%;}
+    .onnus-min-width-20 {min-width: 20%;}
+    .onnus-min-width-25 {min-width: 25%;}
+    .onnus-min-width-30 {min-width: 30%;}
+    .onnus-min-width-35 {min-width: 35%;}
+    .onnus-min-width-40 {min-width: 40%;}
+    .onnus-min-width-45 {min-width: 45%;}
+    .onnus-min-width-50 {min-width: 50%;}
+    .onnus-min-width-55 {min-width: 55%;}
+    .onnus-min-width-60 {min-width: 60%;}
+    .onnus-min-width-65 {min-width: 65%;}
+    .onnus-min-width-70 {min-width: 70%;}
+    .onnus-min-width-75 {min-width: 75%;}
+    .onnus-min-width-80 {min-width: 80%;}
+    .onnus-min-width-85 {min-width: 85%;}
+    .onnus-min-width-90 {min-width: 90%;}
+    .onnus-min-width-95 {min-width: 95%;}
+    .onnus-min-width-100 {min-width: 100%;}
+
+    .onnus-min-width-0px {min-width: 0px;}
+    .onnus-min-width-1px {min-width: 1px;}
+    .onnus-min-width-2px {min-width: 2px;}
+    .onnus-min-width-3px {min-width: 3px;}
+    .onnus-min-width-4px {min-width: 4px;}
+    .onnus-min-width-5px {min-width: 5px;}
+    .onnus-min-width-6px {min-width: 6px;}
+    .onnus-min-width-7px {min-width: 7px;}
+    .onnus-min-width-8px {min-width: 8px;}
+    .onnus-min-width-9px {min-width: 9px;}
+    .onnus-min-width-10px {min-width: 10px;}
+    .onnus-min-width-15px {min-width: 15px;}
+    .onnus-min-width-20px {min-width: 20px;}
+    .onnus-min-width-25px {min-width: 25px;}
+    .onnus-min-width-30px {min-width: 30px;}
+    .onnus-min-width-35px {min-width: 35px;}
+    .onnus-min-width-40px {min-width: 40px;}
+    .onnus-min-width-45px {min-width: 45px;}
+    .onnus-min-width-50px {min-width: 50px;}
+    .onnus-min-width-55px {min-width: 55px;}
+    .onnus-min-width-60px {min-width: 60px;}
+    .onnus-min-width-65px {min-width: 65px;}
+    .onnus-min-width-70px {min-width: 70px;}
+    .onnus-min-width-75px {min-width: 75px;}
+    .onnus-min-width-80px {min-width: 80px;}
+    .onnus-min-width-85px {min-width: 85px;}
+    .onnus-min-width-90px {min-width: 90px;}
+    .onnus-min-width-95px {min-width: 95px;}
+    .onnus-min-width-100px {min-width: 100px;}
+    .onnus-min-width-105px {min-width: 105px;}  /* temp debug code*/
+    .onnus-min-width-110px {min-width: 110px;}  /* temp debug code*/
+    .onnus-min-width-115px {min-width: 115px;}  /* temp debug code*/
+    .onnus-min-width-120px {min-width: 120px;}
+    .onnus-min-width-125px {min-width: 125px;}
+    .onnus-min-width-140px {min-width: 140px;}
+    .onnus-min-width-150px {min-width: 150px;}
+    .onnus-min-width-160px {min-width: 160px;}
+    .onnus-min-width-175px {min-width: 175px;}
+    .onnus-min-width-180px {min-width: 180px;}
+    .onnus-min-width-200px {min-width: 200px;}
+    .onnus-min-width-220px {min-width: 220px;}
+    .onnus-min-width-225px {min-width: 225px;}
+    .onnus-min-width-240px {min-width: 240px;}
+    .onnus-min-width-250px {min-width: 250px;}
+    .onnus-min-width-260px {min-width: 260px;}
+    .onnus-min-width-275px {min-width: 275px;}
+    .onnus-min-width-280px {min-width: 280px;}
+    .onnus-min-width-300px {min-width: 300px;}
+
+
+/* onnus-overflow */
+
+    .onnus-overflow-auto {overflow: auto;}
+    .onnus-overflow-hidden {overflow: hidden;}
+    .onnus-overflow-visible {overflow: visible;}
+
+    .onnus-overflow-y-auto {overflow-y: auto;}
+    .onnus-overflow-y-hidden {overflow-y: hidden;}
+    .onnus-overflow-y-visible {overflow-y: visible;}
+
+    .onnus-overflow-x-auto {overflow-x: auto;}
+    .onnus-overflow-x-hidden {overflow-x: hidden;}
+    .onnus-overflow-x-visible {overflow-x: visible;}
+
+
+/* onnus-padding- */
+
+    .onnus-padding-0px {padding: 0px;}
+    .onnus-padding-1px {padding: 1px;}
+    .onnus-padding-2px {padding: 2px;}
+    .onnus-padding-3px {padding: 3px;}
+    .onnus-padding-4px {padding: 4px;}
+    .onnus-padding-5px {padding: 5px;}
+    .onnus-padding-6px {padding: 6px;}
+    .onnus-padding-7px {padding: 7px;}
+    .onnus-padding-8px {padding: 8px;}
+    .onnus-padding-9px {padding: 9px;}
+    .onnus-padding-10px {padding: 10px;}
+    .onnus-padding-15px {padding: 15px;}
+    .onnus-padding-20px {padding: 20px;}
+    .onnus-padding-25px {padding: 25px;}
+
+    .onnus-padding-left-0px {padding-left: 0px;}
+    .onnus-padding-left-1px {padding-left: 1px;}
+    .onnus-padding-left-2px {padding-left: 2px;}
+    .onnus-padding-left-3px {padding-left: 3px;}
+    .onnus-padding-left-4px {padding-left: 4px;}
+    .onnus-padding-left-5px {padding-left: 5px;}
+    .onnus-padding-left-6px {padding-left: 6px;}
+    .onnus-padding-left-7px {padding-left: 7px;}
+    .onnus-padding-left-8px {padding-left: 8px;}
+    .onnus-padding-left-9px {padding-left: 9px;}
+    .onnus-padding-left-10px {padding-left: 10px;}
+    .onnus-padding-left-15px {padding-left: 15px;}
+    .onnus-padding-left-20px {padding-left: 20px;}
+    .onnus-padding-left-25px {padding-left: 25px;}
+
+    .onnus-padding-right-0px {padding-right: 0px;}
+    .onnus-padding-right-1px {padding-right: 1px;}
+    .onnus-padding-right-2px {padding-right: 2px;}
+    .onnus-padding-right-3px {padding-right: 3px;}
+    .onnus-padding-right-4px {padding-right: 4px;}
+    .onnus-padding-right-5px {padding-right: 5px;}
+    .onnus-padding-right-6px {padding-right: 6px;}
+    .onnus-padding-right-7px {padding-right: 7px;}
+    .onnus-padding-right-8px {padding-right: 8px;}
+    .onnus-padding-right-9px {padding-right: 9px;}
+    .onnus-padding-right-10px {padding-right: 10px;}
+    .onnus-padding-right-15px {padding-right: 15px;}
+    .onnus-padding-right-20px {padding-right: 20px;}
+    .onnus-padding-right-25px {padding-right: 25px;}
+
+    .onnus-padding-right-left-0px, .onnus-padding-left-right-0px {padding-left: 0px; padding-right: 0px;}
+    .onnus-padding-right-left-1px, .onnus-padding-left-right-1px {padding-left: 1px; padding-right: 1px;}
+    .onnus-padding-right-left-2px, .onnus-padding-left-right-2px {padding-left: 2px; padding-right: 2px;}
+    .onnus-padding-right-left-3px, .onnus-padding-left-right-3px {padding-left: 3px; padding-right: 3px;}
+    .onnus-padding-right-left-4px, .onnus-padding-left-right-4px {padding-left: 4px; padding-right: 4px;}
+    .onnus-padding-right-left-5px, .onnus-padding-left-right-5px {padding-left: 5px; padding-right: 5px;}
+    .onnus-padding-right-left-6px, .onnus-padding-left-right-6px {padding-left: 6px; padding-right: 6px;}
+    .onnus-padding-right-left-7px, .onnus-padding-left-right-7px {padding-left: 7px; padding-right: 7px;}
+    .onnus-padding-right-left-8px, .onnus-padding-left-right-8px {padding-left: 8px; padding-right: 8px;}
+    .onnus-padding-right-left-9px, .onnus-padding-left-right-9px {padding-left: 9px; padding-right: 9px;}
+    .onnus-padding-right-left-10px, .onnus-padding-left-right-10px {padding-left: 10px; padding-right: 10px;}
+    .onnus-padding-right-left-15px, .onnus-padding-left-right-15px {padding-left: 15px; padding-right: 15px;}
+    .onnus-padding-right-left-20px, .onnus-padding-left-right-20px {padding-left: 20px; padding-right: 20px;}
+    .onnus-padding-right-left-25px, .onnus-padding-left-right-25px {padding-left: 25px; padding-right: 25px;}
+
+    .onnus-padding-top-0px {padding-top: 0px;}
+    .onnus-padding-top-1px {padding-top: 1px;}
+    .onnus-padding-top-2px {padding-top: 2px;}
+    .onnus-padding-top-3px {padding-top: 3px;}
+    .onnus-padding-top-4px {padding-top: 4px;}
+    .onnus-padding-top-5px {padding-top: 5px;}
+    .onnus-padding-top-6px {padding-top: 6px;}
+    .onnus-padding-top-7px {padding-top: 7px;}
+    .onnus-padding-top-8px {padding-top: 8px;}
+    .onnus-padding-top-9px {padding-top: 9px;}
+    .onnus-padding-top-10px {padding-top: 10px;}
+    .onnus-padding-top-15px {padding-top: 15px;}
+    .onnus-padding-top-20px {padding-top: 20px;}
+    .onnus-padding-top-25px {padding-top: 25px;}
+
+    .onnus-padding-bottom-0px {padding-bottom: 0px;}
+    .onnus-padding-bottom-1px {padding-bottom: 1px;}
+    .onnus-padding-bottom-2px {padding-bottom: 2px;}
+    .onnus-padding-bottom-3px {padding-bottom: 3px;}
+    .onnus-padding-bottom-4px {padding-bottom: 4px;}
+    .onnus-padding-bottom-5px {padding-bottom: 5px;}
+    .onnus-padding-bottom-6px {padding-bottom: 6px;}
+    .onnus-padding-bottom-7px {padding-bottom: 7px;}
+    .onnus-padding-bottom-8px {padding-bottom: 8px;}
+    .onnus-padding-bottom-9px {padding-bottom: 9px;}
+    .onnus-padding-bottom-10px {padding-bottom: 10px;}
+    .onnus-padding-bottom-15px {padding-bottom: 15px;}
+    .onnus-padding-bottom-20px {padding-bottom: 20px;}
+    .onnus-padding-bottom-25px {padding-bottom: 25px;}
+
+    .onnus-padding-top-bottom-0px, .onnus-padding-bottom-top-0px {padding-top: 0px; padding-bottom: 0px;}
+    .onnus-padding-top-bottom-1px, .onnus-padding-bottom-top-1px {padding-top: 1px; padding-bottom: 1px;}
+    .onnus-padding-top-bottom-2px, .onnus-padding-bottom-top-2px {padding-top: 2px; padding-bottom: 2px;}
+    .onnus-padding-top-bottom-3px, .onnus-padding-bottom-top-3px {padding-top: 3px; padding-bottom: 3px;}
+    .onnus-padding-top-bottom-4px, .onnus-padding-bottom-top-4px {padding-top: 4px; padding-bottom: 4px;}
+    .onnus-padding-top-bottom-5px, .onnus-padding-bottom-top-5px {padding-top: 5px; padding-bottom: 5px;}
+    .onnus-padding-top-bottom-6px, .onnus-padding-bottom-top-6px {padding-top: 6px; padding-bottom: 6px;}
+    .onnus-padding-top-bottom-7px, .onnus-padding-bottom-top-7px {padding-top: 7px; padding-bottom: 7px;}
+    .onnus-padding-top-bottom-8px, .onnus-padding-bottom-top-8px {padding-top: 8px; padding-bottom: 8px;}
+    .onnus-padding-top-bottom-9px, .onnus-padding-bottom-top-9px {padding-top: 9px; padding-bottom: 9px;}
+    .onnus-padding-top-bottom-10px, .onnus-padding-bottom-top-10px {padding-top: 10px; padding-bottom: 10px;}
+    .onnus-padding-top-bottom-15px, .onnus-padding-bottom-top-15px {padding-top: 15px; padding-bottom: 15px;}
+    .onnus-padding-top-bottom-20px, .onnus-padding-bottom-top-20px {padding-top: 20px; padding-bottom: 20px;}
+    .onnus-padding-top-bottom-25px, .onnus-padding-bottom-top-25px {padding-top: 25px; padding-bottom: 25px;}
+
+    .onnus-padding-0-1rem {padding: 0.10rem;}
+    .onnus-padding-0-2rem {padding: 0.20rem;}
+    .onnus-padding-0-3rem {padding: 0.30rem;}
+    .onnus-padding-0-4rem {padding: 0.40rem;}
+    .onnus-padding-0-5rem {padding: 0.50rem;}
+    .onnus-padding-0-6rem {padding: 0.60rem;}
+    .onnus-padding-0-7rem {padding: 0.70rem;}
+    .onnus-padding-0-8rem {padding: 0.80rem;}
+    .onnus-padding-0-9rem {padding: 0.90rem;}
+    .onnus-padding-1rem {padding: 1rem;}
+
+
+/* onnus-position- */
+
+    .onnus-position-relative {position: relative;}
+    .onnus-position-absolute {position: absolute;}
+
+
+/* onnus-select- */
+
+    .onnus-select-none {-webkit-user-select: none; user-select: none;}
+
+
+/* onnus-text- */
+
+    .onnus-text-align-left {text-align: start;}
+    .onnus-text-align-center {text-align: center;}
+    .onnus-text-align-right {text-align: end;}
+
+    .onnus-text-overflow-clip {text-overflow: clip; overflow: hidden; white-space: nowrap;}
+    .onnus-text-overflow-ellipsis {text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+
+/* onnus-transform- */
+
+    .onnus-transform-rotate-0deg {transform: rotate(0deg);}
+    .onnus-transform-rotate-90deg {transform: rotate(90deg);}
+    .onnus-transform-rotate-180deg {transform: rotate(180deg);}
+    .onnus-transform-rotate-270deg {transform: rotate(270deg);}
+    .onnus-transform-rotate-360deg {transform: rotate(360deg);}
+
+
+/* onnus-width- */
+
+    .onnus-width-auto {width: auto;}
+    .onnus-width-0px {width: 0px;}
+    .onnus-width-1px {width: 1px;}
+    .onnus-width-2px {width: 2px;}
+    .onnus-width-3px {width: 3px;}
+    .onnus-width-4px {width: 4px;}
+    .onnus-width-5px {width: 5px;}
+    .onnus-width-6px {width: 6px;}
+    .onnus-width-7px {width: 7px;}
+    .onnus-width-8px {width: 8px;}
+    .onnus-width-9px {width: 9px;}
+    .onnus-width-10px {width: 10px;}
+    .onnus-width-15px {width: 15px;}
+    .onnus-width-20px {width: 20px;}
+    .onnus-width-25px {width: 25px;}
+    .onnus-width-30px {width: 30px;}
+    .onnus-width-35px {width: 35px;}
+    .onnus-width-40px {width: 40px;}
+    .onnus-width-45px {width: 45px;}
+    .onnus-width-50px {width: 50px;}
+    .onnus-width-55px {width: 55px;}
+    .onnus-width-60px {width: 60px;}
+    .onnus-width-65px {width: 65px;}
+    .onnus-width-70px {width: 70px;}
+    .onnus-width-75px {width: 75px;}
+    .onnus-width-80px {width: 80px;}
+    .onnus-width-85px {width: 85px;}
+    .onnus-width-90px {width: 90px;}
+    .onnus-width-95px {width: 95px;}
+    .onnus-width-100px {width: 100px;}
+    .onnus-width-120px {width: 120px;}
+    .onnus-width-125px {width: 125px;}
+    .onnus-width-140px {width: 140px;}
+    .onnus-width-150px {width: 150px;}
+    .onnus-width-160px {width: 160px;}
+    .onnus-width-175px {width: 175px;}
+    .onnus-width-180px {width: 180px;}
+    .onnus-width-200px {width: 200px;}
+    .onnus-width-220px {width: 220px;}
+    .onnus-width-225px {width: 225px;}
+    .onnus-width-240px {width: 240px;}
+    .onnus-width-250px {width: 250px;}
+    .onnus-width-260px {width: 260px;}
+    .onnus-width-275px {width: 275px;}
+    .onnus-width-280px {width: 280px;}
+    .onnus-width-300px {width: 300px;}
+
+    .onnus-width-height-auto, .onnus-height-width-auto {width: auto; height: auto;}
+    .onnus-width-height-0px, .onnus-height-width-0px {width: 0px; height: 0px;}
+    .onnus-width-height-1px, .onnus-height-width-1px {width: 1px; height: 1px;}
+    .onnus-width-height-2px, .onnus-height-width-2px {width: 2px; height: 2px;}
+    .onnus-width-height-3px, .onnus-height-width-3px {width: 3px; height: 3px;}
+    .onnus-width-height-4px, .onnus-height-width-4px {width: 4px; height: 4px;}
+    .onnus-width-height-5px, .onnus-height-width-5px {width: 5px; height: 5px;}
+    .onnus-width-height-6px, .onnus-height-width-6px {width: 6px; height: 6px;}
+    .onnus-width-height-7px, .onnus-height-width-7px {width: 7px; height: 7px;}
+    .onnus-width-height-8px, .onnus-height-width-8px {width: 8px; height: 8px;}
+    .onnus-width-height-9px, .onnus-height-width-9px {width: 9px; height: 9px;}
+    .onnus-width-height-10px, .onnus-height-width-10px {width: 10px; height: 10px;}
+    .onnus-width-height-15px, .onnus-height-width-15px {width: 15px; height: 15px;}
+    .onnus-width-height-20px, .onnus-height-width-20px {width: 20px; height: 20px;}
+    .onnus-width-height-25px, .onnus-height-width-25px {width: 25px; height: 25px;}
+    .onnus-width-height-30px, .onnus-height-width-30px {width: 30px; height: 30px;}
+    .onnus-width-height-35px, .onnus-height-width-35px {width: 35px; height: 35px;}
+    .onnus-width-height-40px, .onnus-height-width-40px {width: 40px; height: 40px;}
+    .onnus-width-height-45px, .onnus-height-width-45px {width: 45px; height: 45px;}
+    .onnus-width-height-50px, .onnus-height-width-50px {width: 50px; height: 50px;}
+    .onnus-width-height-55px, .onnus-height-width-55px {width: 55px; height: 55px;}
+    .onnus-width-height-60px, .onnus-height-width-60px {width: 60px; height: 60px;}
+    .onnus-width-height-65px, .onnus-height-width-65px {width: 65px; height: 65px;}
+    .onnus-width-height-70px, .onnus-height-width-70px {width: 70px; height: 70px;}
+    .onnus-width-height-75px, .onnus-height-width-75px {width: 75px; height: 75px;}
+    .onnus-width-height-80px, .onnus-height-width-80px {width: 80px; height: 80px;}
+    .onnus-width-height-85px, .onnus-height-width-85px {width: 85px; height: 85px;}
+    .onnus-width-height-90px, .onnus-height-width-90px {width: 90px; height: 90px;}
+    .onnus-width-height-95px, .onnus-height-width-95px {width: 95px; height: 95px;}
+    .onnus-width-height-100px, .onnus-height-width-100px {width: 100px; height: 100px;}
+    .onnus-width-height-120px, .onnus-height-width-120px {width: 120px; height: 120px;}
+    .onnus-width-height-125px, .onnus-height-width-125px {width: 125px; height: 125px;}
+    .onnus-width-height-140px, .onnus-height-width-140px {width: 140px; height: 140px;}
+    .onnus-width-height-150px, .onnus-height-width-150px {width: 150px; height: 150px;}
+    .onnus-width-height-160px, .onnus-height-width-160px {width: 160px; height: 160px;}
+    .onnus-width-height-175px, .onnus-height-width-175px {width: 175px; height: 175px;}
+    .onnus-width-height-180px, .onnus-height-width-180px {width: 180px; height: 180px;}
+    .onnus-width-height-200px, .onnus-height-width-200px {width: 200px; height: 200px;}
+    .onnus-width-height-220px, .onnus-height-width-220px {width: 220px; height: 220px;}
+    .onnus-width-height-225px, .onnus-height-width-225px {width: 225px; height: 225px;}
+    .onnus-width-height-250px, .onnus-height-width-250px {width: 250px; height: 250px;}
+    .onnus-width-height-260px, .onnus-height-width-260px {width: 260px; height: 260px;}
+    .onnus-width-height-275px, .onnus-height-width-275px {width: 275px; height: 275px;}
+    .onnus-width-height-280px, .onnus-height-width-280px {width: 280px; height: 280px;}
+    .onnus-width-height-300px, .onnus-height-width-300px {width: 300px; height: 300px;}
+
+
+/* MASTER COMMANDS */
+/* onnus-display- */
+
+    .onnus-display-none {display: none;}
+    .onnus-display-flex {display: flex;}
+    .onnus-display-grid {display: grid;}
